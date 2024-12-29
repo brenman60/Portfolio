@@ -1,0 +1,124 @@
+* {
+  font-family: "Verdana";
+  font-weight: bold;
+}
+
+#hero {
+  width: 100%;
+  height: 550px;
+  background-color: #bcdfc4;
+  justify-content: center;
+  display: flex;
+}
+
+#hero h1 {
+  color: #393e41;
+  text-align: center;
+  margin: auto;
+  font-size: 4vw;
+}
+
+#nav {
+  height: 75px;
+  background-color: #393e41;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  list-style-type: none;
+  border-bottom: #38c544;
+  border-bottom-width: 2px;
+  border-style: solid;
+}
+
+.navLink {
+  color: #f6f7eb;
+  padding-left: 35px;
+  padding-right: 35px;
+  align-content: center;
+  margin: 0px;
+  text-align: center;
+  height: 100%;
+}
+
+#nav .navLink:hover {
+  background-color: #494f53;
+}
+
+#headerNav {
+  height: 75px;
+  width: 100%;
+  background-color: #393e41;
+  display: flex;
+  align-items: center;
+  float: left;
+  border-bottom: #38c544;
+  border-bottom-width: 2px;
+  border-style: solid;
+}
+
+.navHeader {
+  color: #f6f7eb;
+  padding: 15px;
+  margin: 0px;
+  text-align: left;
+}
+
+#hamburgerNav {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  #nav .navLink:active {
+    padding-top: 10px;
+  }
+}
+@media (max-width: 1000px) {
+  #nav {
+    display: inline;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    height: auto;
+    margin-top: 75px;
+    border: none;
+  }
+  .navLink {
+    display: block;
+    background-color: #393e41;
+    z-index: 1;
+  }
+  #nav .navLink {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    left: 100vw;
+    opacity: 0%;
+  }
+  #nav .navLink.visible {
+    left: 0;
+    opacity: 100%;
+  }
+  #nav .navLink:last-child {
+    border-bottom: #38c544;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+  }
+  #hamburgerNav {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 75px;
+    width: 75px;
+    aspect-ratio: 1/1;
+    font-size: 1.25em;
+    color: #f6f7eb;
+    align-items: center;
+    justify-content: center;
+  }
+  #hamburgerNav:hover {
+    text-decoration: underline;
+  }
+}

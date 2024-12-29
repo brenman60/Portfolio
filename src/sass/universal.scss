@@ -1,0 +1,26 @@
+@use "./colors.scss";
+
+$titleText: 4vw;
+
+$mobileWidth: 1000px;
+$heroHeight: 550px;
+
+* {
+    font-family: "Verdana";
+    font-weight: bold;
+}
+
+#hero {
+    width: 100%;
+    height: $heroHeight;
+    background-color: colors.$lightColor;
+    justify-content: center;
+    display: flex;
+}
+
+#hero h1 {
+    color: colors.$secondaryColor;
+    text-align: center;
+    margin: auto;
+    font-size: $titleText;
+}

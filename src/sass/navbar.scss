@@ -1,0 +1,122 @@
+@use "colors.scss";
+@use "universal.scss";
+
+$navHeightRaw: 75;
+$navHeight: $navHeightRaw + px;
+
+#nav {
+  height: $navHeight;
+  background-color: colors.$secondaryColor;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  list-style-type: none;
+  
+  border-bottom: colors.$accentColor;
+  border-bottom-width: 2px;
+  border-style: solid;
+}
+
+.navLink {
+  color: colors.$primaryColor;
+  padding-left: 35px;
+  padding-right: 35px;
+  align-content: center;
+  margin: 0px;
+  text-align: center;
+  height: 100%; 
+}
+
+#nav .navLink:hover {
+  background-color: colors.$secondaryColorLight;
+}
+
+#headerNav {
+  height: $navHeight;
+  width: 100%;
+  background-color: colors.$secondaryColor;
+  display: flex;
+  align-items: center;
+  float: left;
+
+  border-bottom: colors.$accentColor;
+  border-bottom-width: 2px;
+  border-style: solid;
+}
+
+.navHeader {
+  color: colors.$primaryColor;
+  padding: 15px;
+  margin: 0px;
+  text-align: left;
+}
+
+#hamburgerNav {
+  display: none;
+}
+
+@media (min-width: universal.$mobileWidth) {
+  #nav .navLink:active {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: universal.$mobileWidth) {
+  // Mobile
+  #nav {
+    display: inline;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    height: auto;
+    margin-top: $navHeight;
+    
+    border: none;
+  }
+
+  .navLink {
+    display: block;
+    background-color: colors.$secondaryColor;
+    z-index: 1;
+  }
+
+  #nav .navLink {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    left: 100vw;
+    opacity: 0%;
+  }
+
+  #nav .navLink.visible {
+    left: 0;
+    opacity: 100%;
+  }
+
+  #nav .navLink:last-child {
+    border-bottom: colors.$accentColor;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+  }
+
+  #hamburgerNav {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: $navHeight;
+    width: $navHeight;
+    aspect-ratio: 1 / 1;
+    font-size: 1.25em;
+    color: colors.$primaryColor;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #hamburgerNav:hover {
+    text-decoration: underline;
+  }
+}
