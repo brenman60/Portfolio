@@ -1,10 +1,22 @@
 const PageDivider = ({
-    height = 200,
-    color = "white",
+  height = "200px",
+  width = "100%",
+  color = "white",
+  opacity = "1",
 }) => {
   return (
-    <div className={"pageDivider"} style={{height: height, backgroundColor: color}} />
-  )
-}
+    <div
+      className={"pageDivider"}
+      style={{
+        height: `${height}`,
+        width: `${width}`,
+        backgroundColor: `${color}`,
+        opacity: `${opacity}`,
+        margin: "auto"
+      }}
+    />
+  );
+};
+
 
 export default PageDivider;

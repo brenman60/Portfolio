@@ -1,18 +1,23 @@
 * {
   font-family: "Verdana";
   font-weight: bold;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 3px 3px black;
+}
+
+html {
+  background-color: #bcdfc4;
 }
 
 #hero {
   width: 100%;
-  height: 550px;
+  height: 400px;
   background-color: #bcdfc4;
   justify-content: center;
   display: flex;
 }
 
 #hero h1 {
-  color: #393e41;
+  color: #f6f7eb;
   text-align: center;
   margin: auto;
   font-size: 4vw;

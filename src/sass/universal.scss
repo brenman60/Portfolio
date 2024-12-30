@@ -3,11 +3,16 @@
 $titleText: 4vw;
 
 $mobileWidth: 1000px;
-$heroHeight: 550px;
+$heroHeight: 400px;
 
 * {
     font-family: "Verdana";
     font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 3px 3px black;
+}
+
+html {
+    background-color: colors.$lightColor;
 }
 
 #hero {
@@ -19,7 +24,7 @@ $heroHeight: 550px;
 }
 
 #hero h1 {
-    color: colors.$secondaryColor;
+    color: colors.$primaryColor;
     text-align: center;
     margin: auto;
     font-size: $titleText;

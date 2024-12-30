@@ -17,8 +17,10 @@ import NotFound from "./pages/NotFound";
 export const colorScheme = {
   PrimaryColor: "#f6f7eb",
   SecondaryColor: "#393e41",
+  SecondaryColorLight: "#494f53",
   AccentColor: "#38c544",
   LightColor: "#bcdfc4",
+  LightColor2: "#9dbda5",
 }
 
 const router = createBrowserRouter(
