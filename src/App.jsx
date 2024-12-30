@@ -23,7 +23,7 @@ export const colorScheme = {
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<MainLayout />}>
+    <Route path="/" element={<MainLayout />} >
       <Route index element={<HomePage />} />
       <Route path="/about" element={<AboutMe />} />
       <Route path="/resume" element={<ResumeAndCerts />} />
@@ -32,7 +32,8 @@ const router = createBrowserRouter(
       <Route path="/contact" element={<Contact />} />
       <Route path="*" element={<NotFound />} />
     </Route>
-  )
+  ),
+  { basename: "/portfolio" }
 );
 
 const App = () => {

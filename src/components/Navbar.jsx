@@ -64,14 +64,16 @@ const Navbar = () => {
                     transition: `
                     left ${((index + 1) / 4) * 0.5}s ease-in-out, 
                     opacity ${((index + 1) / 4) * 0.5}s ease-in-out,
-                    padding-top ${0.05}s ease-in-out`,
+                    padding-top ${0.05}s ease-in-out,
+                    background-color 0.25s ease-in-out`,
                   }
                 : {
                     position: "relative",
                     transition: `
                     left ${((index + 1) / 4) * 0.5}s ease-in-out, 
                     opacity ${((index + 1) / 4) * 0.5}s ease-in-out,
-                    padding-top ${0.05}s ease-in-out`,
+                    padding-top 0.05s ease-in-out,
+                    background-color 0.25s ease-in-out`,
                   }
             }
             onClick={toggleNavLinks}
