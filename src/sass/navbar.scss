@@ -6,19 +6,19 @@ $navHeight: $navHeightRaw + px;
 
 #nav {
   height: $navHeight;
-  background-color: colors.$secondaryColor;
+  background-color: colors.$background2;
   display: flex;
   align-items: center;
   justify-content: right;
   list-style-type: none;
   
-  border-bottom: colors.$accentColor;
+  border-bottom: colors.$heading;
   border-bottom-width: 2px;
   border-style: solid;
 }
 
 .navLink {
-  color: colors.$primaryColor;
+  color: colors.$text;
   padding-left: 35px;
   padding-right: 35px;
   align-content: center;
@@ -34,18 +34,18 @@ $navHeight: $navHeightRaw + px;
 #headerNav {
   height: $navHeight;
   width: 100%;
-  background-color: colors.$secondaryColor;
+  background-color: colors.$background2;
   display: flex;
   align-items: center;
   float: left;
 
-  border-bottom: colors.$accentColor;
+  border-bottom: colors.$heading;
   border-bottom-width: 2px;
   border-style: solid;
 }
 
 .navHeader {
-  color: colors.$primaryColor;
+  color: colors.$text;
   padding: 15px;
   margin: 0px;
   text-align: left;
@@ -76,7 +76,7 @@ $navHeight: $navHeightRaw + px;
 
   .navLink {
     display: block;
-    background-color: colors.$secondaryColor;
+    background-color: colors.$background2;
     z-index: 1;
   }
 
@@ -97,7 +97,7 @@ $navHeight: $navHeightRaw + px;
   }
 
   #nav .navLink:last-child {
-    border-bottom: colors.$accentColor;
+    border-bottom: colors.$heading;
     border-bottom-width: 2px;
     border-bottom-style: solid;
   }
@@ -111,7 +111,7 @@ $navHeight: $navHeightRaw + px;
     width: $navHeight;
     aspect-ratio: 1 / 1;
     font-size: 1.25em;
-    color: colors.$primaryColor;
+    color: colors.$text;
     align-items: center;
     justify-content: center;
   }

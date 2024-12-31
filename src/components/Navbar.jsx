@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "../styles/navbar.css";
 
@@ -33,11 +33,11 @@ const Navbar = () => {
   };
 
   const links = [
-    { to: "/about", label: "About Me" },
-    { to: "/resume", label: "Resume & Certifications" },
-    { to: "/awards", label: "Awards & Skills" },
-    { to: "/workSamples", label: "Work Samples" },
-    { to: "/contact", label: "Contact" },
+    { to: "/portfolio/about", label: "About Me" },
+    { to: "/portfolio/resume", label: "Resume & Certifications" },
+    { to: "/portfolio/awards", label: "Awards & Skills" },
+    { to: "/portfolio/workSamples", label: "Work Samples" },
+    { to: "/portfolio/contact", label: "Contact" },
   ];
 
   return (

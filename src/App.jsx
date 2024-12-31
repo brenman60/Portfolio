@@ -1,11 +1,10 @@
 import {
-  Route,
-  createBrowserRouter,
-  createRoutesFromElements,
   RouterProvider,
+  createBrowserRouter,
 } from "react-router-dom";
 
 import MainLayout from "./layouts/MainLayout";
+import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import AboutMe from "./pages/AboutMe";
 import Contact from "./pages/Contact";
@@ -15,31 +14,57 @@ import WorkSamples from "./pages/WorkSamples";
 import NotFound from "./pages/NotFound";
 
 export const colorScheme = {
-  PrimaryColor: "#f6f7eb",
-  SecondaryColor: "#393e41",
-  SecondaryColorLight: "#494f53",
-  AccentColor: "#38c544",
-  LightColor: "#bcdfc4",
-  LightColor2: "#9dbda5",
+  background1: "#1E1E1E",
+  background2: "#2B2B2B",
+  heading: "#007ACC",
+  highlight: "#FF6F00",
+  text: "#EDEDED",
 }
 
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path="/" element={<MainLayout />} >
-      <Route index element={<HomePage />} />
-      <Route path="/about" element={<AboutMe />} />
-      <Route path="/resume" element={<ResumeAndCerts />} />
-      <Route path="/awards" element={<AwardsAndSkills />} />
-      <Route path="/workSamples" element={<WorkSamples />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="*" element={<NotFound />} />
-    </Route>
-  ),
-  { basename: "/portfolio" }
-);
+const router = createBrowserRouter([
+  {
+    path: "/portfolio",
+    element: (
+      <>
+        <Navbar />
+        <MainLayout />
+      </>
+    ),
+    children: [
+      {
+        index: true,
+        element: <HomePage />,
+      },
+      {
+        path: "about",
+        element: <AboutMe />,
+      },
+      {
+        path: "resume",
+        element: <ResumeAndCerts />,
+      },
+      {
+        path: "awards",
+        element: <AwardsAndSkills />,
+      },
+      {
+        path: "workSamples",
+        element: <WorkSamples />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
+      },
+    ],
+  },
+]);
 
 const App = () => {
-  return <RouterProvider router={router} />
-}
+  return <RouterProvider router={router} />;
+};
 
 export default App;

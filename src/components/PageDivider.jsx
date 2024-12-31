@@ -1,7 +1,8 @@
+import { colorScheme } from "../App";
+
 const PageDivider = ({
   height = "200px",
   width = "100%",
-  color = "white",
   opacity = "1",
 }) => {
   return (
@@ -10,9 +11,10 @@ const PageDivider = ({
       style={{
         height: `${height}`,
         width: `${width}`,
-        backgroundColor: `${color}`,
+        backgroundColor: `${colorScheme.background2}`,
         opacity: `${opacity}`,
-        margin: "auto"
+        margin: "auto",
+        marginBottom: "50px",
       }}
     />
   );

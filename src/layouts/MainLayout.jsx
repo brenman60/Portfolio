@@ -1,13 +1,13 @@
 import { Outlet } from "react-router-dom";
-import Navbar from "../components/Navbar";
 import "../styles/universal.css";
 
-const MainLayout = () => {
+import { AnimatePresence } from "framer-motion";
+
+const MainLayout = () => {  
   return (
-    <>
-      <Navbar />
+    <AnimatePresence>
       <Outlet />
-    </>
+    </AnimatePresence>
   )
 }
 

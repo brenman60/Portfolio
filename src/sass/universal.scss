@@ -6,25 +6,25 @@ $mobileWidth: 1000px;
 $heroHeight: 400px;
 
 * {
-    font-family: "Verdana";
+    font-family: "Roboto";
     font-weight: bold;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black, 3px 3px black;
 }
 
 html {
-    background-color: colors.$lightColor;
+    background-color: colors.$background1;
 }
 
 #hero {
     width: 100%;
     height: $heroHeight;
-    background-color: colors.$lightColor;
+    background-color: colors.$background1;
     justify-content: center;
     display: flex;
 }
 
 #hero h1 {
-    color: colors.$primaryColor;
+    color: colors.$text;
     text-align: center;
     margin: auto;
     font-size: $titleText;
