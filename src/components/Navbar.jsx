@@ -2,17 +2,6 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "../styles/navbar.css";
 
-{
-  /*
-  Checking NavLink active state:
-   ={({ isActive }) => isActive ? } 
-  */
-  /*
- Adding styles: (commas not semicolons!!)
- style={{ display: "flex", }}
- */
-}
-
 const Navbar = () => {
   const [navVisible, setNavVisible] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -33,11 +22,11 @@ const Navbar = () => {
   };
 
   const links = [
-    { to: "/portfolio/about", label: "About Me" },
-    { to: "/portfolio/resume", label: "Resume & Certifications" },
-    { to: "/portfolio/awards", label: "Awards & Skills" },
-    { to: "/portfolio/workSamples", label: "Work Samples" },
-    { to: "/portfolio/contact", label: "Contact" },
+    { to: "/about", label: "About Me" },
+    { to: "/resume", label: "Resume & Certifications" },
+    { to: "/awards", label: "Awards & Skills" },
+    { to: "/workSamples", label: "Work Samples" },
+    { to: "/contact", label: "Contact" },
   ];
 
   return (

@@ -1,0 +1,65 @@
+.certificationsGroup {
+  position: relative;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #1b1b1b;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+.certGroupTitle {
+  width: 90%;
+  font-size: clamp(1em, 5vw, 2.5em);
+  color: #EDEDED;
+}
+
+.certificationsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  transition: height 0.5s ease-in-out;
+}
+
+.certificationsList.closed {
+  overflow: hidden;
+}
+
+.certGroupButton {
+  position: absolute;
+  display: flow;
+  color: #EDEDED;
+  width: 25%;
+  max-width: 50px;
+  height: 50px;
+  top: 15px;
+  right: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #2B2B2B;
+  border-color: #007ACC;
+  transition: border-width 0.05s ease-in-out;
+}
+
+.certGroupButton.disabled {
+  pointer-events: none;
+}
+
+.certGroupButton:hover {
+  border-width: 2px;
+}
+
+.certGroupFooter {
+  background-color: #2B2B2B;
+  width: 100%;
+  height: 5px;
+  border-radius: 25px;
+  opacity: 0.25;
+  margin-left: auto;
+  margin-right: auto;
+}

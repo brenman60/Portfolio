@@ -15,6 +15,7 @@ const PageDivider = ({
         opacity: `${opacity}`,
         margin: "auto",
         marginBottom: "50px",
+        borderRadius: "25px",
       }}
     />
   );

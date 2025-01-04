@@ -23,7 +23,7 @@ export const colorScheme = {
 
 const router = createBrowserRouter([
   {
-    path: "/portfolio",
+    path: "/",
     element: (
       <>
         <Navbar />

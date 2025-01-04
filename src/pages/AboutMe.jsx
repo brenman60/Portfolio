@@ -23,16 +23,7 @@ const AboutMe = () => {
         <p>Hello World</p>
         <p>Hello World</p>
         <p>Hello World</p>
-        <p>Hello World</p>
-        <p>Hello World</p>
-        <p>Hello World</p>
-        <p>Hello World</p>
-        <p>Hello World</p>
-        <p>Hello World</p>
-        <p>Hello World</p>
-        <p>Hello World</p>
-        <p>Hello World</p>
-        <p>Hello World</p>
+        
       </Dropdown>
     </motion.div>
   );
