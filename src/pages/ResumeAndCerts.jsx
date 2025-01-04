@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, process } from "react";
 import CertificationsList from "../components/CertificationsList";
 import Hero from "../components/Hero";
 import PageDivider from "../components/PageDivider";
@@ -11,7 +11,7 @@ const ResumeAndCerts = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("/data/certifications.json")
+    fetch("data/certifications.json")
     .then(response => response.json())
     .then(jsonData => setData(jsonData))
     .catch(error => console.error("Error loading JSON: ", error));
