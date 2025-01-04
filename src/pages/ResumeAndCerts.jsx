@@ -1,4 +1,4 @@
-import { useState, process } from "react";
+import { useState } from "react";
 import CertificationsList from "../components/CertificationsList";
 import Hero from "../components/Hero";
 import PageDivider from "../components/PageDivider";
@@ -20,6 +20,8 @@ const ResumeAndCerts = () => {
   if (!data) {
     return <motion.div></motion.div>
   }
+
+  console.log(data);
 
   return (
     <motion.div
