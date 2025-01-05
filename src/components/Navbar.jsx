@@ -33,7 +33,7 @@ const Navbar = () => {
   return (
     <>
       <nav id={"headerNav"}>
-        <NavLink to="/" className={"navLink"}>
+        <NavLink to="/portfolio" className={"navLink"}>
           Brennan Kunicki
         </NavLink>
       </nav>

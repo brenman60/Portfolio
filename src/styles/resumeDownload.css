@@ -1,0 +1,59 @@
+@keyframes glowMove {
+  0% {
+    background: linear-gradient(0deg, #007ACC, #00D8FF, #007ACC);
+  }
+  100% {
+    background: linear-gradient(360deg, #007ACC, #00D8FF, #007ACC);
+  }
+}
+.resumeDownload {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 50px;
+  padding: 10px 25px 10px 25px;
+  font-size: 2.5vw;
+  text-align: center;
+  background-color: #2B2B2B;
+  color: #EDEDED;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: #1b1b1b;
+  transition: border-color 0.25s ease-in-out;
+}
+
+.resumeDownload:hover {
+  border-color: #007ACC;
+}
+
+.resumeDownloadWrapper {
+  position: relative;
+  width: 90%;
+  margin: auto;
+}
+
+.resumeDownloadWrapper::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  z-index: -1;
+  border-radius: 15px;
+  background-position: center;
+  background-size: 100% 100%;
+  animation-name: glowMove;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  filter: blur(5px);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.resumeDownloadWrapper:hover:before {
+  opacity: 0.5;
+}

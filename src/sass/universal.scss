@@ -13,6 +13,7 @@ $heroHeight: 400px;
 
 html {
     background-color: colors.$background1;
+    overflow-y: scroll;
 }
 
 #hero {
