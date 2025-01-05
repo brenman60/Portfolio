@@ -7,10 +7,17 @@
     margin: auto;
     padding: 5px 10px 5px 10px;
     text-align: center;
+    font-size: 1em;
     background-color: rgba(colors.$background1, 0.5);
     border-radius: 10px;
     border-width: 1px;
     border-color: colors.$background3;
+
+    transition: background-color 0.15s ease-in-out;
+}
+
+.skill:hover {
+    background-color: rgba(colors.$background3, 1);
 }
 
 .skill > p {

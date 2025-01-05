@@ -1,16 +1,23 @@
 import "../styles/certification.css";
-import { useCertificationContext } from "./CertificationContext";
+import Skill from "./Skill";
 
 const Certification = ({
     certData
 }) => {
-  const { setInfo } = useCertificationContext();
-
   return (
-    <div className="certContent" onClick={() => setInfo(certData)}>
+    <a className="certContent" href={certData.link} target="_blank" >
         <img src={certData.image} className="certImage" />
         <h1 className="certName">{certData.name}</h1>
-    </div>
+        <ul className="certSkills">
+          {certData.skills.map((skill, index) => {
+            return(
+              <li key={index}>
+                <Skill skill={skill} />
+              </li>
+            );
+          })}
+        </ul>
+    </a>
   )
 };
 

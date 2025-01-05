@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import Certification from './Certification';
 import "../styles/certificationsList.css";
+import { useEffect } from 'react';
 
 const CertificationsList = ({
     title,
@@ -16,6 +17,22 @@ const CertificationsList = ({
       data: value,
     }))
   );
+
+  const updateListHeight = () => {
+    if (listRef.current) {
+      listRef.current.style.height = isOpen ? `${listRef.current.scrollHeight}px` : '0';
+    }
+  };
+
+  useEffect(() => {
+    const handleResize = () => updateListHeight();
+    window.addEventListener("resize", handleResize);
+    updateListHeight();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    }
+  });
 
   const handleTransitionEnd = (id, propertyName) => {
     if (propertyName === "opacity") {

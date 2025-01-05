@@ -23,7 +23,8 @@ const Navbar = () => {
 
   const links = [
     { to: "/portfolio/about", label: "About Me" },
-    { to: "/portfolio/resume", label: "Resume & Certifications" },
+    { to: "/portfolio/certifications", label: "Certifications" },
+    { to: "/portfolio/resume", label: "Resume" },
     { to: "/portfolio/awards", label: "Awards & Skills" },
     { to: "/portfolio/workSamples", label: "Work Samples" },
     { to: "/portfolio/contact", label: "Contact" },

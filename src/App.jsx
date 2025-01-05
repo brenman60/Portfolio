@@ -8,11 +8,11 @@ import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import AboutMe from "./pages/AboutMe";
 import Contact from "./pages/Contact";
-import ResumeAndCerts from "./pages/ResumeAndCerts";
+import Certifications from "./pages/Certifications";
 import AwardsAndSkills from "./pages/AwardsAndSkills";
 import WorkSamples from "./pages/WorkSamples";
 import NotFound from "./pages/NotFound";
-import { CertificationProvider } from "./components/CertificationContext";
+import Resume from "./pages/Resume";
 
 export const colorScheme = {
   background1: "#1E1E1E",
@@ -41,8 +41,12 @@ const router = createBrowserRouter([
         element: <AboutMe />,
       },
       {
+        path: "certifications",
+        element: <Certifications />,
+      },
+      {
         path: "resume",
-        element: <ResumeAndCerts />,
+        element: <Resume />,
       },
       {
         path: "awards",
@@ -66,9 +70,7 @@ const router = createBrowserRouter([
 
 const App = () => {
   return ( 
-    <CertificationProvider>
-      <RouterProvider router={router} />
-    </CertificationProvider>
+    <RouterProvider router={router} />
   );
 };
 

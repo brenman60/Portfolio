@@ -4,10 +4,9 @@ import Hero from "../components/Hero";
 import PageDivider from "../components/PageDivider";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
-import CertificationPage from "../components/CertificationPage";
 
-const ResumeAndCerts = () => {
-  document.title = "Resume & Certifications";
+const Certifications = () => {
+  document.title = "Certifications";
 
   const [data, setData] = useState(null);
 
@@ -24,22 +23,20 @@ const ResumeAndCerts = () => {
 
   return (
     <motion.div
-      key="resume-and-certifications"
+      key="certifications"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ type: "tween", duration: 0.5, ease: "anticipate" }}
     >
-      <Hero title="Resume & Certifications" />
+      <Hero title="Certifications" />
       <PageDivider height="4px" width="80%" opacity="0.5" />
 
       {Object.entries(data).map(([key, value]) => (
         <CertificationsList key={key} title={key} certifications={value} />
       ))}
-
-      <CertificationPage />
     </motion.div>
   );
 };
 
-export default ResumeAndCerts;
+export default Certifications;
