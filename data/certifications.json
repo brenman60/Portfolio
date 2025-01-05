@@ -300,5 +300,17 @@
             "link": "https://www.credly.com/badges/b1cfba1c-3371-40c4-acfd-ff6006259f99/public_url",
             "skills": ["Applications & Software", "Database Fundamentals", "IT Concepts", "IT Infrastructure", "Networking Concepts", "Programming Concepts", "Software Development", "Wireless Networks"]
         }
+    },
+
+    "OSHA": {
+        "osha_10_hour": {
+            "name": "OSHA 10-Hour",
+            "logo": "/portfolio/images/certifications/OSHA/osha.png",
+            "image": "/portfolio/images/certifications/OSHA/osha_10_hour.jpeg",
+            "issued": "November 2024",
+            "id": "CS-0004371923",
+            "link": "",
+            "skills": ["Workplace Safety", "Ergonomics", "Electrical Safety"]
+        }
     }
 }
