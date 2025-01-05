@@ -44,7 +44,7 @@ const Navbar = () => {
           <NavLink
             key={link.to}
             to={link.to}
-            className={`navLink ${navVisible ? "visible" : ""}`}
+            className={`navLink ${navVisible ? "visible" : "closed"}`}
             style={
               isMobile
                 ? {

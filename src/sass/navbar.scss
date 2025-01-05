@@ -28,7 +28,7 @@ $navHeight: $navHeightRaw + px;
 }
 
 #nav .navLink:hover {
-  background-color: colors.$secondaryColorLight;
+  background-color: colors.$background1;
 }
 
 #headerNav {
@@ -64,13 +64,14 @@ $navHeight: $navHeightRaw + px;
 @media (max-width: universal.$mobileWidth) {
   // Mobile
   #nav {
+    background-color: transparent;
     display: inline;
     position: absolute;
     left: 0px;
     right: 0px;
     height: auto;
     margin-top: $navHeight;
-    
+    overflow: hidden;
     border: none;
   }
 

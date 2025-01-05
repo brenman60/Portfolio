@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import PageDivider from "../components/PageDivider";
 import { motion } from "framer-motion";
 import { useEffect } from "react";
+import CertificationPage from "../components/CertificationPage";
 
 const ResumeAndCerts = () => {
   document.title = "Resume & Certifications";
@@ -21,8 +22,6 @@ const ResumeAndCerts = () => {
     return <motion.div></motion.div>
   }
 
-  console.log(data);
-
   return (
     <motion.div
       key="resume-and-certifications"
@@ -37,6 +36,8 @@ const ResumeAndCerts = () => {
       {Object.entries(data).map(([key, value]) => (
         <CertificationsList key={key} title={key} certifications={value} />
       ))}
+
+      <CertificationPage />
     </motion.div>
   );
 };

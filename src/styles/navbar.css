@@ -17,7 +17,7 @@ html {
 }
 
 #hero h1 {
-  color: #f6f7eb;
+  color: #EDEDED;
   text-align: center;
   margin: auto;
   font-size: 4vw;
@@ -46,7 +46,7 @@ html {
 }
 
 #nav .navLink:hover {
-  background-color: #494f53;
+  background-color: #1E1E1E;
 }
 
 #headerNav {
@@ -79,12 +79,14 @@ html {
 }
 @media (max-width: 1000px) {
   #nav {
+    background-color: transparent;
     display: inline;
     position: absolute;
     left: 0px;
     right: 0px;
     height: auto;
     margin-top: 75px;
+    overflow: hidden;
     border: none;
   }
   .navLink {

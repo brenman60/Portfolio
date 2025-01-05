@@ -12,6 +12,7 @@ import ResumeAndCerts from "./pages/ResumeAndCerts";
 import AwardsAndSkills from "./pages/AwardsAndSkills";
 import WorkSamples from "./pages/WorkSamples";
 import NotFound from "./pages/NotFound";
+import { CertificationProvider } from "./components/CertificationContext";
 
 export const colorScheme = {
   background1: "#1E1E1E",
@@ -64,7 +65,11 @@ const router = createBrowserRouter([
 ]);
 
 const App = () => {
-  return <RouterProvider router={router} />;
+  return ( 
+    <CertificationProvider>
+      <RouterProvider router={router} />
+    </CertificationProvider>
+  );
 };
 
 export default App;

@@ -1,0 +1,19 @@
+@use "colors.scss";
+
+.skill {
+    position: relative;
+    display: flex;
+    width: auto;
+    margin: auto;
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    background-color: rgba(colors.$background1, 0.5);
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: colors.$background3;
+}
+
+.skill > p {
+    width: auto;
+    margin: auto;
+}

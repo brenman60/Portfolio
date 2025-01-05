@@ -1,0 +1,17 @@
+.skill {
+  position: relative;
+  display: flex;
+  width: auto;
+  margin: auto;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+  background-color: rgba(30, 30, 30, 0.5);
+  border-radius: 10px;
+  border-width: 1px;
+  border-color: #1b1b1b;
+}
+
+.skill > p {
+  width: auto;
+  margin: auto;
+}
