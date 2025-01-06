@@ -13,7 +13,7 @@ import AwardsAndSkills from "./pages/AwardsAndSkills";
 import WorkSamples from "./pages/WorkSamples";
 import NotFound from "./pages/NotFound";
 import Resume from "./pages/Resume";
-import { SkillsProvider } from "./components/SkillsProvider";
+import { TagsProvider } from "./components/TagsProvider";
 
 export const colorScheme = {
   background1: "#1E1E1E",
@@ -71,9 +71,9 @@ const router = createBrowserRouter([
 
 const App = () => {
   return ( 
-    <SkillsProvider>
+    <TagsProvider>
       <RouterProvider router={router} />
-    </SkillsProvider>
+    </TagsProvider>
   );
 };
 

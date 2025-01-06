@@ -90,11 +90,13 @@ $navHeight: $navHeightRaw + px;
 
     left: 100vw;
     opacity: 0%;
+    pointer-events: none;
   }
 
   #nav .navLink.visible {
     left: 0;
     opacity: 100%;
+    pointer-events: all;
   }
 
   #nav .navLink:last-child {

@@ -1,6 +1,6 @@
 @use "colors.scss";
 
-.skill {
+.tag {
     position: relative;
     display: flex;
     width: auto;
@@ -16,11 +16,11 @@
     transition: background-color 0.15s ease-in-out;
 }
 
-.skill:hover {
+.tag:hover {
     background-color: rgba(colors.$background3, 1);
 }
 
-.skill > p {
+.tag > p {
     width: auto;
     margin: auto;
 }

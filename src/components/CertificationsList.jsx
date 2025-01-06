@@ -73,13 +73,13 @@ const CertificationsList = ({
           height: "0"
         }}>
           {certs.map((cert, index) => (
-            <li key={cert.id} className="certWrapper" style={{pointerEvents: cert.isInteractive ? "auto" : "none"}}>
+            <li key={cert.id} className="certWrapper" style={{pointerEvents: cert.isInteractive ? "auto" : "none", visibility: `${cert.visibility}`}}>
               <div
                 className={`cert ${isOpen ? "open" : "closed"}`}
                 data-id={cert.id}
                 style={{
                   transitionDelay: `${isOpen ? (index * 0.25) : (0.1)}s, ${isOpen ? (index * 0.25 + 0.1) : (0.2)}s, 0s, 0s`,
-                  transitionDuration: `${isOpen ? 1 : 0.5}s, ${isOpen ? 1 : 0.5}s, 0.5s, 0.05s`
+                  transitionDuration: `${isOpen ? 1 : 0.5}s, ${isOpen ? 1 : 0.5}s, 0.5s, 0.05s`,
                 }}
                 onTransitionEnd={(e) =>
                   handleTransitionEnd(cert.id, e.propertyName)
