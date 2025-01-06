@@ -55,7 +55,7 @@
             "issued": "November 2024",
             "id": "",
             "link": "https://www.credly.com/badges/bdcd02d5-9842-468b-9159-851934015753/public_url",
-            "skills": ["HTML5", "JavaScript", "Software Development"]
+            "skills": ["HTML", "JavaScript", "Software Development"]
         },
         "certiport_artificial_intelligence": {
             "name": "IT Specialist - Artificial Intelligence",
@@ -190,7 +190,7 @@
             "issued": "October 2023",
             "id": "ENq5-DkTb",
             "link": "https://www.credly.com/badges/22f4976a-f8fe-4eec-9f9f-3255d7dad76d/public_url",
-            "skills": ["HTML5"]
+            "skills": ["HTML"]
         },
         "certiport_javascript": {
             "name": "IT Specialist - JavaScript",
@@ -208,7 +208,7 @@
             "issued": "May 2023",
             "id": "66q5-uTnS",
             "link": "https://www.credly.com/badges/1456e941-fb64-4ac3-90e5-e7d6d1d1e8f8/public_url",
-            "skills": ["HTML5", "CSS"]
+            "skills": ["HTML", "CSS"]
         },
         "certiport_python": {
             "name": "IT Specialist - Python",
@@ -229,7 +229,7 @@
             "issued": "February 2024",
             "id": "099598d1602d469a823dfc0c9b771c56",
             "link": "https://cp.certmetrics.com/ciwcerts/en/public/verify/credential/099598d1602d469a823dfc0c9b771c56",
-            "skills": ["HTML5", "CSS", "JavaScript", "JavaScript Libraries", "Web Development", "Site Development"]
+            "skills": ["HTML", "CSS", "JavaScript", "JavaScript Libraries", "Web Development", "Site Development"]
         },
         "ciw_v5_database_design_specialist": {
             "name": "CIW v5 Database Design Specialist",
@@ -247,7 +247,7 @@
             "issued": "December 2023",
             "id": "0381257e8f084ae3959696a1134bebf9",
             "link": "https://cp.certmetrics.com/ciwcerts/en/public/verify/credential/0381257e8f084ae3959696a1134bebf9",
-            "skills": ["HTML5", "CSS"]
+            "skills": ["HTML", "CSS"]
         },
         "ciw_javascript_specialist": {
             "name": "CIW JavaScript Specialist",
@@ -265,7 +265,7 @@
             "issued": "November 2023",
             "id": "1c398d0bf26e4b55991f090ed205e092",
             "link": "https://cp.certmetrics.com/ciwcerts/en/public/verify/credential/1c398d0bf26e4b55991f090ed205e092",
-            "skills": ["Site Development", "Web Design", "HTML5", "CSS"]
+            "skills": ["Site Development", "Web Design", "HTML", "CSS"]
         }
     },
 

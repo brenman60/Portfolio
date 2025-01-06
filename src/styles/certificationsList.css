@@ -1,3 +1,11 @@
+@keyframes glowMove {
+  0% {
+    background: linear-gradient(0deg, #007ACC, #00D8FF, #007ACC);
+  }
+  100% {
+    background: linear-gradient(360deg, #007ACC, #00D8FF, #007ACC);
+  }
+}
 .certificationsGroup {
   position: relative;
   width: 90%;
@@ -30,16 +38,44 @@
   overflow: hidden;
 }
 
+.certGroupButtonWrapper {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  height: 50px;
+  width: 50px;
+}
+.certGroupButtonWrapper::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  z-index: 1;
+  border-radius: 15px;
+  background-position: center;
+  background-size: 100% 100%;
+  animation-name: glowMove;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  filter: blur(5px);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.certGroupButtonWrapper:hover::before {
+  opacity: 0.5;
+}
+
 .certGroupButton {
   position: absolute;
-  display: flow;
+  display: block;
   color: #EDEDED;
-  width: 25%;
-  max-width: 50px;
-  height: 50px;
-  top: 15px;
-  right: 15px;
+  width: 100%;
+  height: 100%;
   border-radius: 5px;
+  z-index: 2;
   cursor: pointer;
   background-color: #2B2B2B;
   border-color: #007ACC;

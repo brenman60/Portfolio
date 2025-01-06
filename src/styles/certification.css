@@ -38,7 +38,6 @@
 .certWrapper {
   position: relative;
 }
-
 .certWrapper::before {
   content: "";
   position: absolute;
@@ -58,8 +57,7 @@
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
 }
-
-.certWrapper:hover:before {
+.certWrapper:hover::before {
   opacity: 0.5;
 }
 

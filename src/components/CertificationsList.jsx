@@ -8,6 +8,7 @@ const CertificationsList = ({
     certifications,
 }) => {
   const [isOpen, setOpen] = useState(false);
+  const [buttonDisabled, setButtonDisabled] = useState(false);
   const listRef = useRef(null);
 
   const [certs, setCerts] = useState(
@@ -52,8 +53,10 @@ const CertificationsList = ({
   const toggleList = (button) => {
     setOpen(!isOpen);
 
+    setButtonDisabled(true);
     button.classList.add("disabled");
     setTimeout(() => {
+      setButtonDisabled(false);
       button.classList.remove("disabled");
     }, 2 * 1000)
   };
@@ -61,14 +64,16 @@ const CertificationsList = ({
   return (
     <div className="certificationsGroup">
         <h1 className="certGroupTitle">{title}</h1>
-        <button className="certGroupButton" onClick={(e) => toggleList(e.target)}>...</button>
+        <div className="certGroupButtonWrapper" style={{ pointerEvents: buttonDisabled ? "none" : "auto" }}>
+          <button className="certGroupButton" onClick={(e) => toggleList(e.target)}>...</button>
+        </div>
         <ul className={`certificationsList ${isOpen ? "open" : "closed"}`} ref={listRef}  style={isOpen ? {
           height: `${listRef.current?.scrollHeight}px`
         } : {
           height: "0"
         }}>
           {certs.map((cert, index) => (
-            <li key={cert.id} className="certWrapper" style={{pointerEvents: cert.isInteractive ? "all" : "none"}}>
+            <li key={cert.id} className="certWrapper" style={{pointerEvents: cert.isInteractive ? "auto" : "none"}}>
               <div
                 className={`cert ${isOpen ? "open" : "closed"}`}
                 data-id={cert.id}
