@@ -60,5 +60,15 @@
     "59": { "name": "Workplace Safety", "category": "" },
     "60": { "name": "Ergonomics", "category": "" },
     "61": { "name": "Electrical Safety", "category": "" },
-    "62": { "name": "Network Administration", "category": "" }
+    "62": { "name": "Network Administration", "category": "" },
+    "63": { "name": "Data Science", "category": "" },
+    "64": { "name": "Visual Basic", "category": "" },
+    "65": { "name": "Windows Form Apps", "category": "" },
+    "66": { "name": "Windows Presentation Foundation", "category": "" },
+    "67": { "name": "C#", "category": "" },
+    "68": { "name": "UI Design", "category": "" },
+    "69": { "name": "Cryptography", "category": "" },
+    "70": { "name": "Unity", "category": "" },
+    "71": { "name": "Game Development", "category": "" },
+    "72": { "name": "Game Design", "category": "" }
 }

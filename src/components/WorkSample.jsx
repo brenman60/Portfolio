@@ -1,6 +1,12 @@
+import { useContext } from "react";
 import "../styles/workSample.css";
+import { TagsContext } from "./TagsProvider";
 
-const WorkSample = () => {
+const WorkSample = ({
+  sample
+}) => {
+  const { getTagNames } = useContext(TagsContext);
+
   return (
     <div className="workSample">
       

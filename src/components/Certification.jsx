@@ -6,7 +6,6 @@ import { TagsContext } from "./TagsProvider";
 const Certification = ({
     certData
 }) => {
-
   const { getTagNames } = useContext(TagsContext);
 
   return (

@@ -14,6 +14,10 @@ const WorkSamples = () => {
     >
       <Hero title="Work Samples" />
       <PageDivider height="4px" width="80%" opacity="0.5" />
+      
+      <div>
+
+      </div>
     </motion.div>
   );
 };
