@@ -6,6 +6,7 @@ const HeroFormats = {
 
 const Hero = ({
     title = "",
+    image = "",
     format = HeroFormats.SText,
     elements = {},
 }) => {
@@ -15,7 +16,7 @@ const Hero = ({
     <div id={"hero"}>
         <h1 style={{titleStyle}}>{title}</h1>
         <div className={"heroBackground"}>
-          
+          <img src={image} style={{ visibility: image == "" ? "hidden" : "visible" }} />
         </div>
     </div>
   )
