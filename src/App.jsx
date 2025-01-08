@@ -11,6 +11,7 @@ import Contact from "./pages/Contact";
 import Certifications from "./pages/Certifications";
 import AwardsAndSkills from "./pages/AwardsAndSkills";
 import WorkSamples from "./pages/WorkSamples";
+import WorkSamplePage from "./pages/WorkSamplePage";
 import NotFound from "./pages/NotFound";
 import Resume from "./pages/Resume";
 import { TagsProvider } from "./components/TagsProvider";
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
       {
         path: "workSamples",
         element: <WorkSamples />,
+      },
+      {
+        path: "workSample",
+        element: <WorkSamplePage />,
       },
       {
         path: "contact",
