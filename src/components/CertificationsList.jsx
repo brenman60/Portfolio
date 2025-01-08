@@ -53,9 +53,9 @@ const CertificationsList = ({
   const toggleList = (button) => {
     setOpen(!isOpen);
 
-    if (isOpen) {
-      const certElements = document.getElementsByClassName("cert");
-      Array.from(certElements).forEach(cert => {
+    if (isOpen && listRef.current) {
+      const certElements = listRef.current.querySelectorAll(".cert");
+      certElements.forEach((cert) => {
         if (cert.classList.contains("open")) {
           cert.classList.add("closed");
           cert.classList.remove("open");

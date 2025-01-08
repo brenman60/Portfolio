@@ -20,10 +20,13 @@
         filter: blur($blur);
         opacity: 0;
         transition: opacity 0.15s ease-in;
+        pointer-events: none;
     }
 
-    &:hover::before {
-        opacity: $opacity;
+    &:hover {
+        &::before {
+            opacity: $opacity;
+        }
     }
 }
 

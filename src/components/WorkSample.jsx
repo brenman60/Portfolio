@@ -22,12 +22,32 @@ const WorkSample = ({
       if (entry.isIntersecting) {
         setVisible(true);
       }
+    }, {
+      rootMargin: "-50px 0px -50px 0px",
     });
 
     observer.observe(element);
 
     return () => observer.disconnect();
   }, []);
+
+  const changeImage = (direction) => {
+    var currentIndex = sample.gallery.indexOf(image);
+    
+    if (direction == "left") {
+      currentIndex--;
+      if (currentIndex == -1) {
+        currentIndex = sample.gallery.length - 1;
+      }
+    } else {
+      currentIndex++;
+      if (currentIndex == sample.gallery.length) {
+        currentIndex = 0;
+      }
+    }
+
+    setImage(sample.gallery[currentIndex]);
+  };
 
   return (
     <div id={sample.name} className={`workSample ${isVisible ? "open" : "closed"}`}>
@@ -36,9 +56,9 @@ const WorkSample = ({
         <p className={`workStatus ${sample.status.toString().toLowerCase()}`}>{sample.status}</p>
       </div>
       <div className="workGallery">
-        <a className="workGalleryLeft">{"<"}</a>
+        <button className="workGalleryLeft" onClick={() => changeImage("left")}>{"<"}</button>
         <img className="workGalleryImage" src={image} />
-        <a className="workGalleryRight">{">"}</a>
+        <button className="workGalleryRight" onClick={() => changeImage("right")}>{">"}</button>
       </div>
       <h1 className="workName">{sample.name}</h1>
       <a className="workLearnMore">Learn More</a>

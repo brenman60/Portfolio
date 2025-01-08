@@ -73,6 +73,7 @@
   filter: blur(5px);
   opacity: 0;
   transition: opacity 0.15s ease-in;
+  pointer-events: none;
 }
 .certGroupButtonWrapper:hover::before {
   opacity: 0.5;

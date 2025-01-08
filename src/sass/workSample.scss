@@ -80,11 +80,14 @@
     font-size: 2em;
     z-index: 1;
     transform: translateY(-50%);
+    background-color: rgba(colors.$background3, 0.5);
+    border-radius: 5px;
     transition: transform 0.15s ease-in, font-size 0.15s ease-in, all 0.15s ease-in;
     cursor: pointer;
 
     &:hover {
-        font-size: 2.25em;
+        //font-size: 2.05em;
+        transform: translateY(-50%) translateX(-5%);
     }
 }
 
@@ -97,6 +100,8 @@
     border-radius: 10px;
     border-width: 2px;
     border-color: rgba(colors.$background3, 0.5);
+
+    height: 300px;
 }
 
 .workGalleryRight {
@@ -106,11 +111,14 @@
     font-size: 2em;
     z-index: 1;
     transform: translateY(-50%);
+    background-color: rgba(colors.$background3, 0.5);
+    border-radius: 5px;
     transition: transform 0.15s ease-in, font-size 0.15s ease-in, all 0.15s ease-in;
     cursor: pointer;
 
     &:hover {
-        font-size: 2.25em;
+        //font-size: 2.05em;
+        transform: translateY(-50%) translateX(5%);
     }
 }
 

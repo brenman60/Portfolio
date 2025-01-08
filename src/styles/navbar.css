@@ -31,7 +31,7 @@ html {
   justify-content: right;
   list-style-type: none;
   z-index: 100;
-  gap: 1.5vw;
+  gap: clamp(10px, 1.5vw, 1.5vw);
   white-space: nowrap;
 }
 
@@ -70,14 +70,14 @@ html {
   display: none;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1400px) {
   .navLink.active {
     border-bottom: #339de4;
     border-bottom-width: 5px;
     border-style: solid;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1400px) {
   #nav {
     background-color: transparent;
     display: inline;
