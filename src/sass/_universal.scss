@@ -1,13 +1,13 @@
 @use "./colors.scss";
 
-$titleText: 4vw;
+$titleText: 3vw;
 
 $mobileWidth: 1000px;
-$heroHeight: 400px;
+$heroHeight: 250px;
 
 * {
-    font-family: "Roboto";
-    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
 }
 
 html {

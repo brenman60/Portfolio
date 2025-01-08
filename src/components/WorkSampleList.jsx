@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "../styles/workSampleList.css";
+import WorkSample from "./WorkSample";
 
 const WorkSampleList = () => {
   const [data, setData] = useState(null);
@@ -11,9 +12,15 @@ const WorkSampleList = () => {
     .catch(error => console.error("Error loading JSON: ", error));
   }, []);
 
+  if (!data) {
+    return <></>;
+  }
+
   return (
     <div className="workSampleList">
-      
+      {data.map((item, index) => (
+        <WorkSample key={index} sample={item} />
+      ))}
     </div>
   )
 }

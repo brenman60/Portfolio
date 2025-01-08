@@ -1,0 +1,137 @@
+.workSample {
+  position: relative;
+  width: 550px;
+  height: auto;
+  background-color: #2B2B2B;
+  padding: 10px;
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: #111111;
+  color: #EDEDED;
+  transition: opacity 0.5s ease-in 0.1s;
+}
+.workSample.open {
+  opacity: 1;
+}
+.workSample.closed {
+  opacity: 0;
+}
+
+.workOrganization {
+  top: 5;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+  height: 25px;
+  position: absolute;
+}
+.workOrganization p {
+  padding: 2px 5px 2px 5px;
+  border-radius: 5px;
+  border-width: 1px;
+}
+
+.workCategory {
+  background-color: rgba(51, 157, 228, 0.35);
+  border-color: rgba(51, 157, 228, 0.5);
+  transition: opacity 0.15s ease-in;
+}
+.workCategory:hover {
+  opacity: 0.75;
+}
+
+.workStatus {
+  background-color: rgba(51, 157, 228, 0.35);
+  border-color: rgba(51, 157, 228, 0.5);
+  transition: opacity 0.15s ease-in;
+}
+.workStatus:hover {
+  opacity: 0.75;
+}
+
+.workStatus.completed {
+  background-color: rgba(71, 224, 148, 0.35);
+  border-color: rgba(71, 224, 148, 0.5);
+}
+
+.workStatus.unfinished {
+  background-color: rgba(238, 85, 65, 0.35);
+  border-color: rgba(238, 85, 65, 0.5);
+}
+
+.workGallery {
+  margin-top: 50px;
+  position: relative;
+}
+
+.workGalleryLeft {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  font-size: 2em;
+  z-index: 1;
+  transform: translateY(-50%);
+  transition: transform 0.15s ease-in, font-size 0.15s ease-in, all 0.15s ease-in;
+  cursor: pointer;
+}
+.workGalleryLeft:hover {
+  font-size: 2.25em;
+}
+
+.workGalleryImage {
+  -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 75%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 75%, rgba(0, 0, 0, 0) 100%);
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: rgba(27, 27, 27, 0.5);
+}
+
+.workGalleryRight {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  font-size: 2em;
+  z-index: 1;
+  transform: translateY(-50%);
+  transition: transform 0.15s ease-in, font-size 0.15s ease-in, all 0.15s ease-in;
+  cursor: pointer;
+}
+.workGalleryRight:hover {
+  font-size: 2.25em;
+}
+
+.workName {
+  font-size: 1.75em;
+  font-weight: bold;
+}
+
+.workLearnMore {
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  font-size: 1.15em;
+  margin-top: 10px;
+  background-color: rgba(108, 59, 173, 0.25);
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: rgba(108, 59, 173, 0.5);
+  cursor: pointer;
+  transition: background-color 0.15s ease-in, border-radius 0.15s ease-in, width 0.15s ease-in;
+}
+.workLearnMore:hover {
+  background-color: rgba(108, 59, 173, 0.5);
+  border-radius: 15px;
+}
+
+.workTags {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}

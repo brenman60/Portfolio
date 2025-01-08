@@ -14,10 +14,10 @@
     border-color: colors.$background3;
 
     transition: background-color 0.15s ease-in-out;
-}
 
-.tag:hover {
-    background-color: rgba(colors.$background3, 1);
+    &:hover {
+        background-color: rgba(colors.$background3, 1);
+    }
 }
 
 .tag > p {

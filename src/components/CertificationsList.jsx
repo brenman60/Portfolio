@@ -53,6 +53,16 @@ const CertificationsList = ({
   const toggleList = (button) => {
     setOpen(!isOpen);
 
+    if (isOpen) {
+      const certElements = document.getElementsByClassName("cert");
+      Array.from(certElements).forEach(cert => {
+        if (cert.classList.contains("open")) {
+          cert.classList.add("closed");
+          cert.classList.remove("open");
+        }
+      });
+    }
+
     setButtonDisabled(true);
     button.classList.add("disabled");
     setTimeout(() => {
@@ -72,20 +82,17 @@ const CertificationsList = ({
         } : {
           height: "0"
         }}>
-          {certs.map((cert, index) => (
+          {certs.map((cert) => (
             <li key={cert.id} className="certWrapper" style={{pointerEvents: cert.isInteractive ? "auto" : "none", visibility: `${cert.visibility}`}}>
               <div
-                className={`cert ${isOpen ? "open" : "closed"}`}
+                className={"cert closed"}
                 data-id={cert.id}
-                style={{
-                  transitionDelay: `${isOpen ? (index * 0.25) : (0.1)}s, ${isOpen ? (index * 0.25 + 0.1) : (0.2)}s, 0s, 0s`,
-                  transitionDuration: `${isOpen ? 1 : 0.5}s, ${isOpen ? 1 : 0.5}s, 0.5s, 0.05s`,
-                }}
+                id={cert.id}
                 onTransitionEnd={(e) =>
                   handleTransitionEnd(cert.id, e.propertyName)
                 }
               >
-                <Certification certData={cert.data} />
+                <Certification certData={cert.data} listRef={listRef} id={cert.id} />
               </div>
             </li>
           ))}

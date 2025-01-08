@@ -33,14 +33,14 @@ const Navbar = () => {
   return (
     <>
       <nav id={"headerNav"}>
-        <NavLink to="/portfolio" className={"navLink"}>
+        <NavLink to="/portfolio/" className={"navLink"}>
           Brennan Kunicki
         </NavLink>
       </nav>
 
       <button id={"hamburgerNav"} onClick={toggleNavLinks}>...</button>
 
-      <nav id={"nav"} className={navVisible ? "showLinks" : ""}>
+      <nav id={"nav"} className={navVisible ? "showLinks" : ""} /*style={{ pointerEvents: navVisible ? "all" : "none" }}*/>
         {links.map((link, index) => (
           <NavLink
             key={link.to}

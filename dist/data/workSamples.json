@@ -1,26 +1,193 @@
 [
     {
-        "category": "Data Science",
-        "name": "Python Data Cleaning & Visualization",
-        "gallery": [],
-        "link": [
+        "category": "Data Science & Automation",
+        "status": "Completed",
+        "name": "Data Cleaning & Visualization",
+        "gallery": [
+            "/portfolio/images/projects/TankStrike/Example.png"
+        ],
+        "links": [
             {
-                "name": "Example Link",
+                "name": "GitHub",
+                "link": "https://github.com/brenman60/CVS-Data-Science"
+            },
+            {
+                "name": "Kaggle",
+                "link": "https://www.kaggle.com/code/brennankunicki/cvs-data-science"
+            },
+            {
+                "name": "Download",
+                "link": "/portfolio/downloads/projects/DataCleaningVisualization.ipynb"
+            }
+        ],
+        "tags": [22, 63, 12, 13, 15],
+        "description": "Template Description",
+        "visibility": "visible"
+    },
+    {
+        "category": "Data Science & Automation",
+        "status": "Unfinished",
+        "name": "Discord Bot",
+        "gallery": [
+            "/portfolio/images/projects/TankStrike/Example.png"
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "link": "https://github.com/brenman60/Malachite"
+            }
+        ],
+        "tags": [22, 12, 14, 16, 17, 57],
+        "description": "Template Description",
+        "visibility": "visible"
+    },
+    {
+        "category": "Data Science & Automation",
+        "status": "Unfinished",
+        "name": "Mod Downloader",
+        "gallery": [
+            "/portfolio/images/projects/TankStrike/Example.png"
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "link": "https://github.com/brenman60/Python-Mod-Downloader"
+            }
+        ],
+        "tags": [22, 24, 12, 14, 20],
+        "description": "Template Description",
+        "visibility": "hidden"
+    },
+
+    {
+        "category": "Programming",
+        "status": "Completed",
+        "name": "Binary Clock",
+        "gallery": [
+            "/portfolio/images/projects/TankStrike/Example.png"
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "link": "https://github.com/brenman60/Binary-Clock"
+            },
+            {
+                "name": "Download",
+                "link": "/portfolio/downloads/projects/BinaryClock.zip"
+            }
+        ],
+        "tags": [64, 65, 12, 17],
+        "description": "Template Description",
+        "visibility": "visible"
+    },
+    {
+        "category": "Programming",
+        "status": "Completed",
+        "name": "Mod Downloader",
+        "gallery": [
+            "/portfolio/images/projects/TankStrike/Example.png"
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "link": "https://github.com/brenman60/CSharp-Mod-Downloader"
+            },
+            {
+                "name": "Download",
+                "link": "/portfolio/downloads/projects/C#ModDownloader.zip"
+            }
+        ],
+        "tags": [67, 24, 12, 14, 20, 68],
+        "description": "Template Description",
+        "visibility": "visible"
+    },
+    {
+        "category": "Programming",
+        "status": "Completed",
+        "name": "Cryptography Speed Test -- REMAKE!!!!!!!!",
+        "gallery": [
+            "/portfolio/images/projects/TankStrike/Example.png"
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "link": ""
+            },
+            {
+                "name": "Download",
                 "link": ""
             }
         ],
-        "visibility": "show"
+        "tags": [30, 69, 12, 16, 15],
+        "description": "Template Description",
+        "visibility": "hidden"
+    },
+
+    {
+        "category": "Game Development",
+        "status": "Completed",
+        "name": "Forlorn",
+        "gallery": [
+            "/portfolio/images/projects/TankStrike/Example.png"
+        ],
+        "links": [
+            {
+                "name": "Itch",
+                "link": "https://brenman60.itch.io/forlorn"
+            },
+            {
+                "name": "Google Play",
+                "link": "https://play.google.com/store/apps/details?id=com.brenman60Games.Forlorn"
+            },
+            {
+                "name": "Project Website",
+                "link": "https://gameprojectforlornsite-1-10881469.codehs.me/index.html"
+            }
+        ],
+        "tags": [71, 72, 68, 67, 70, 57, 26, 13, 17],
+        "description": "Template Description",
+        "visibility": "visible"
     },
     {
         "category": "Game Development",
-        "name": "Forlorn",
-        "gallery": [],
-        "link": [
+        "status": "Unfinished",
+        "name": "Tank Strike",
+        "gallery": [
+            "/portfolio/images/projects/TankStrike/Example.png"
+        ],
+        "links": [
             {
-                "name": "Example Link",
-                "link": ""
+                "name": "Steam",
+                "link": "https://store.steampowered.com/app/2495480/Tank_Strike/"
+            },
+            {
+                "name": "YouTube",
+                "link": "https://youtube.com/playlist?list=PLmDPpeJXClQjHRi6ZJlzC3iMV5KFEbVhZ&si=OIK_jWvNjoGl_ca0"
             }
         ],
-        "visibility": "show"
+        "tags": [71, 72, 68, 67, 70, 57, 26, 13, 17],
+        "description": "Template Description",
+        "visibility": "hidden"
+    },
+    {
+        "category": "Game Development",
+        "status": "Completed",
+        "name": "Darkening",
+        "gallery": [
+            "/portfolio/images/projects/TankStrike/Example.png"
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "link": "https://github.com/brenman60/Darkening"
+            },
+            {
+                "name": "Itch",
+                "link": "https://brenman60.itch.io/darkening"
+            }
+        ],
+        "tags": [71, 72, 68, 67, 70, 57, 26, 13, 17],
+        "description": "Template Description",
+        "visibility": "hidden"
     }
 ]

@@ -33,6 +33,7 @@
 
 .certWrapper {
     @include glowEffect();
+    position: relative;
 }
 
 .certContent {
