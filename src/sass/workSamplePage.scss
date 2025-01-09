@@ -1,0 +1,87 @@
+@use "colors.scss";
+
+#hero {
+    margin-bottom: 25px;
+}
+
+#workDescription {
+    position: relative;
+    color: colors.$text;
+    font-size: 1.25em;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 75%;
+}
+
+.workTags {
+    width: 70%;
+    margin: auto;
+    background-color: colors.$background2;
+    color: colors.$text;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+.workPicturesContainer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.workPictures {
+    position: relative;
+}
+
+.workPicturesTitle {
+    color: colors.$text;
+    font-weight: bold;
+    font-size: 4vw;
+    text-align: center;
+}
+
+.workPicturesLeft {
+    position: absolute;
+    top: 50%;
+    left: 10vw;
+    font-size: 2em;
+    z-index: 1;
+    transform: translateY(-50%);
+    background-color: rgba(colors.$background3, 0.5);
+    color: colors.$text;
+    border-radius: 5px;
+    transition: all 0.15s ease-in;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-50%) translateX(-15%);
+    }
+}
+
+.workPicturesImage {
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: rgba(colors.$background3, 0.5);
+
+    height: auto;
+    width: 85%;
+    margin: auto;
+}
+
+.workPicturesRight {
+    position: absolute;
+    top: 50%;
+    right: 10vw;
+    font-size: 2em;
+    z-index: 1;
+    transform: translateY(-50%);
+    background-color: rgba(colors.$background3, 0.5);
+    color: colors.$text;
+    border-radius: 5px;
+    transition: all 0.15s ease-in;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-50%) translateX(15%);
+    }
+}

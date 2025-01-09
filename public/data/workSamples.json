@@ -22,11 +22,25 @@
             {
                 "name": "Download",
                 "link": "/portfolio/downloads/projects/DataCleaningVisualization.ipynb"
+            },
+            {
+                "name": "Presentation",
+                "link": "/portfolio/downloads/projects/CVSDataSciencePresentation.pdf"
             }
         ],
         "tags": [22, 63, 12, 13, 15],
-        "description": "Template Description",
-        "visibility": "visible"
+        "description": "During a CVS Data Science Mentorship, I created a Jupyter Notebook which aimed to clean, transform, and visualize, and model a prediction algorithm based on  anonymized hospital data. Every one of these tasks were programmed in Python, utilizing various libraries such as Pandas, Matplotlib, Seaborn, and Scikit-learn. The brunt of the project consisted of cleaning and transforming the data, which required the use of analytical thinking in order to ascertain the transformations and cleaning required. At the very end of the mentorship, we were instructed to put together an informative presentation to give to our peers, which required various learned presentation design skills, such as proper headlines, trackers, and useful charts.",
+        "visibility": "visible",
+
+        "banner": "/portfolio/images/projects/TankStrike/Example5.png",
+        "time": "",
+        "role": "",
+        "pictures": [
+            {
+                "link": "/portfolio/images/projects/TankStrike/Example4.png",
+                "caption": "Example Caption"
+            }
+        ]
     },
     {
         "category": "Data Science & Automation",
@@ -47,7 +61,10 @@
         ],
         "tags": [22, 12, 14, 16, 17, 57],
         "description": "Template Description",
-        "visibility": "visible"
+        "visibility": "visible",
+
+        "banner": "/portfolio/images/projects/TankStrike/Example5.png",
+        "role": ""
     },
     {
         "category": "Data Science & Automation",
@@ -68,7 +85,17 @@
         ],
         "tags": [22, 24, 12, 14, 20],
         "description": "Template Description",
-        "visibility": "hidden"
+        "visibility": "hidden",
+
+        "banner": "/portfolio/images/projects/TankStrike/Example5.png",
+        "time": "",
+        "role": "",
+        "pictures": [
+            {
+                "link": "",
+                "caption": ""
+            }
+        ]
     },
 
     {
@@ -94,7 +121,17 @@
         ],
         "tags": [64, 65, 12, 17],
         "description": "Template Description",
-        "visibility": "visible"
+        "visibility": "visible",
+
+        "banner": "/portfolio/images/projects/TankStrike/Example5.png",
+        "time": "",
+        "role": "",
+        "pictures": [
+            {
+                "link": "",
+                "caption": ""
+            }
+        ]
     },
     {
         "category": "Programming",
@@ -119,7 +156,17 @@
         ],
         "tags": [67, 24, 12, 14, 20, 68],
         "description": "Template Description",
-        "visibility": "visible"
+        "visibility": "visible",
+
+        "banner": "/portfolio/images/projects/TankStrike/Example5.png",
+        "time": "",
+        "role": "",
+        "pictures": [
+            {
+                "link": "",
+                "caption": ""
+            }
+        ]
     },
     {
         "category": "Programming",
@@ -144,7 +191,17 @@
         ],
         "tags": [30, 69, 12, 16, 15],
         "description": "Template Description",
-        "visibility": "hidden"
+        "visibility": "hidden",
+
+        "banner": "/portfolio/images/projects/TankStrike/Example5.png",
+        "time": "",
+        "role": "",
+        "pictures": [
+            {
+                "link": "",
+                "caption": ""
+            }
+        ]
     },
 
     {
@@ -174,7 +231,17 @@
         ],
         "tags": [71, 72, 68, 67, 70, 57, 26, 13, 17],
         "description": "Template Description",
-        "visibility": "visible"
+        "visibility": "visible",
+
+        "banner": "/portfolio/images/projects/TankStrike/Example5.png",
+        "time": "",
+        "role": "",
+        "pictures": [
+            {
+                "link": "",
+                "caption": ""
+            }
+        ]
     },
     {
         "category": "Game Development",
@@ -199,7 +266,17 @@
         ],
         "tags": [71, 72, 68, 67, 70, 57, 26, 13, 17],
         "description": "Template Description",
-        "visibility": "hidden"
+        "visibility": "hidden",
+
+        "banner": "/portfolio/images/projects/TankStrike/Example5.png",
+        "time": "",
+        "role": "",
+        "pictures": [
+            {
+                "link": "",
+                "caption": ""
+            }
+        ]
     },
     {
         "category": "Game Development",
@@ -224,6 +301,16 @@
         ],
         "tags": [71, 72, 68, 67, 70, 57, 26, 13, 17],
         "description": "Template Description",
-        "visibility": "hidden"
+        "visibility": "hidden",
+
+        "banner": "/portfolio/images/projects/TankStrike/Example5.png",
+        "time": "",
+        "role": "",
+        "pictures": [
+            {
+                "link": "",
+                "caption": ""
+            }
+        ]
     }
 ]

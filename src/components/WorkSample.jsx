@@ -65,14 +65,14 @@ const WorkSample = ({
       <h1 className="workName">{sample.name}</h1>
       <a className="workLearnMore" onClick={() => navigate("/portfolio/workSample", { state: sample })}>Learn More</a>
       <ul className="workTags">
-          {getTagNames(sample.tags).map((tag, index) => {
-            return(
-              <li key={index}>
-                <Tag tag={tag} />
-              </li>
-            );
-          })}
-        </ul>
+        {getTagNames(sample.tags).map((tag, index) => {
+          return(
+            <li key={index}>
+              <Tag tag={tag} />
+            </li>
+          );
+        })}
+      </ul>
     </div>
   )
 }

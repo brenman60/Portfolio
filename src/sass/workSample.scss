@@ -82,7 +82,7 @@
     transform: translateY(-50%);
     background-color: rgba(colors.$background3, 0.5);
     border-radius: 5px;
-    transition: transform 0.15s ease-in, font-size 0.15s ease-in, all 0.15s ease-in;
+    transition: all 0.15s ease-in;
     cursor: pointer;
 
     &:hover {
@@ -113,7 +113,7 @@
     transform: translateY(-50%);
     background-color: rgba(colors.$background3, 0.5);
     border-radius: 5px;
-    transition: transform 0.15s ease-in, font-size 0.15s ease-in, all 0.15s ease-in;
+    transition: all 0.15s ease-in;
     cursor: pointer;
 
     &:hover {

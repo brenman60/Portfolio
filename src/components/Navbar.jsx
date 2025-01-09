@@ -49,7 +49,7 @@ const Navbar = () => {
             style={
               isMobile
                 ? {
-                    top: `${index * 54 + 75}px`,
+                    top: `${index * 58 + 75}px`,
                     position: "fixed",
                     transition: `
                     left ${((index + 1) / 4) * 0.5}s ease-in-out, 

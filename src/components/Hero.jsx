@@ -1,22 +1,21 @@
-const HeroFormats = {
-  SText: "stext",
-  FElements: "felements",
-  SElements: "selements",
-};
+import "../styles/hero.css";
 
 const Hero = ({
     title = "",
+    subtitle = "",
     image = "",
-    format = HeroFormats.SText,
-    elements = {},
+    height = 250,
 }) => {
-  let titleStyle = title == "" ? "visibility: none" : "visibility: visible";
+  const hasImage = image != "";
 
   return (
-    <div id={"hero"}>
-        <h1 style={{titleStyle}}>{title}</h1>
-        <div className={"heroBackground"}>
-          <img src={image} style={{ visibility: image == "" ? "hidden" : "visible" }} />
+    <div id="hero" style={{ height: height }}>
+        <div id="heroTitles">
+          <h1 id="heroText" className={hasImage ? "background" : ""} style={{ visibility: title == "" ? "hidden" : "visible" }}>{title}</h1>
+          <h1 id="heroSubtext" className={hasImage ? "background" : ""} style={{ visibility: subtitle == "" ? "hidden" : "visible" }}>{subtitle}</h1>
+        </div>
+        <div id="heroBackground">
+          <img src={image} style={{ visibility: hasImage ? "visible" : "hidden" }} />
         </div>
     </div>
   )

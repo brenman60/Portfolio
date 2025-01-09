@@ -1,9 +1,6 @@
 @use "./colors.scss";
 
-$titleText: 3vw;
-
 $mobileWidth: 1400px;
-$heroHeight: 250px;
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -13,19 +10,4 @@ $heroHeight: 250px;
 html {
     background-color: colors.$background1;
     overflow-y: scroll;
-}
-
-#hero {
-    width: 100%;
-    height: $heroHeight;
-    background-color: colors.$background1;
-    justify-content: center;
-    display: flex;
-}
-
-#hero h1 {
-    color: colors.$text;
-    text-align: center;
-    margin: auto;
-    font-size: $titleText;
 }

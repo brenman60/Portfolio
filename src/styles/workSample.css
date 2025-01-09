@@ -74,7 +74,7 @@
   transform: translateY(-50%);
   background-color: rgba(27, 27, 27, 0.5);
   border-radius: 5px;
-  transition: transform 0.15s ease-in, font-size 0.15s ease-in, all 0.15s ease-in;
+  transition: all 0.15s ease-in;
   cursor: pointer;
 }
 .workGalleryLeft:hover {
@@ -99,7 +99,7 @@
   transform: translateY(-50%);
   background-color: rgba(27, 27, 27, 0.5);
   border-radius: 5px;
-  transition: transform 0.15s ease-in, font-size 0.15s ease-in, all 0.15s ease-in;
+  transition: all 0.15s ease-in;
   cursor: pointer;
 }
 .workGalleryRight:hover {

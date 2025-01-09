@@ -71,6 +71,7 @@ $navHeight: $navHeightRaw + px;
     margin-top: $navHeight;
     overflow: hidden;
     border: none;
+    pointer-events: none;
   }
 
   .navLink {
