@@ -22,7 +22,7 @@
   padding: 10px 25px 10px 25px;
   font-weight: bold;
   width: 60%;
-  word-break: break-word;
+  word-break: keep-all;
   max-height: 300px;
   overflow: hidden;
 }
@@ -42,7 +42,7 @@
   padding: 5px 15px 5px 15px;
   font-weight: bold;
   width: 55%;
-  word-break: break-word;
+  word-break: keep-all;
   max-height: 300px;
   overflow: hidden;
 }

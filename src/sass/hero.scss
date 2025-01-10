@@ -28,7 +28,7 @@ $subtitleText: 2vw;
     padding: 10px 25px 10px 25px;
     font-weight: bold;
     width: clamp(50%, 60%, 75%);
-    word-break: break-word;
+    word-break: keep-all;
     max-height: 300px;
     overflow: hidden;
 
@@ -49,7 +49,7 @@ $subtitleText: 2vw;
     padding: 5px 15px 5px 15px;
     font-weight: bold;
     width: clamp(45%, 55%, 70%);
-    word-break: break-word;
+    word-break: keep-all;
     max-height: 300px;
     overflow: hidden;
 

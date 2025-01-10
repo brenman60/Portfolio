@@ -6,6 +6,7 @@ import { TagsContext } from "../components/TagsProvider";
 import { useContext, useState } from "react";
 import Tag from "../components/Tag";
 import PageDivider from "../components/PageDivider";
+import Link from "../components/Link";
 
 const WorkSamplePage = () => {
   const location = useLocation();
@@ -37,13 +38,22 @@ const WorkSamplePage = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ type: "tween", duration: 0.5, ease: "anticipate" }}
+      transition={{ type: "tween", duration: 1, ease: "anticipate" }}
     >
-      <Hero title={workSample.name} subtitle={workSample.status} image={workSample.banner} height={500} />
+      <Hero title={workSample.name} subtitle={workSample.status} image={workSample.banner} height={400} />
+      <ul id="workSampleLinks">
+        {workSample.links.map((item, index) => (
+          <li key={index} className="workSampleLink">
+            <Link linkType={item.name} link={item.link} />
+          </li>
+        ))}
+      </ul>
       <PageDivider height="4px" width="80%" opacity="0.5" />
+      <h1 className="workSectionTitle">Description</h1>
       <p id="workDescription">{workSample.description}</p>
       <PageDivider height="4px" width="80%" opacity="0.5" />
-      <ul className="workTags">
+      <h1 className="workSectionTitle">Relevant Skills</h1>
+      <ul id="workSampleTags">
         {getTagNames(workSample.tags).map((tag, index) => {
           return(
             <li key={index}>
@@ -53,10 +63,10 @@ const WorkSamplePage = () => {
         })}
       </ul>
       <PageDivider height="4px" width="80%" opacity="0.5" />
-      <p id="workRole">{workSample.role}</p>
+      <p id="workRole">{`Role: ${workSample.role}`}</p>
       <PageDivider height="4px" width="80%" opacity="0.5" />
       <div className="workPicturesContainer">
-        <h1 className="workPicturesTitle">Media</h1>
+        <h1 className="workSectionTitle">Media</h1>
         <div className="workPictures">
           <button className="workPicturesLeft" onClick={() => changeImage("left")}>{"<"}</button>
           <img className="workPicturesImage" src={image.link} />

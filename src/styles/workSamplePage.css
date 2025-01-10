@@ -2,6 +2,24 @@
   margin-bottom: 25px;
 }
 
+.workSectionTitle {
+  color: #EDEDED;
+  font-weight: bold;
+  font-size: 4vw;
+  text-align: center;
+}
+
+#workSampleLinks {
+  display: grid;
+  list-style-type: none;
+  gap: 10px;
+}
+
+.workSampleLink {
+  position: relative;
+  display: flex;
+}
+
 #workDescription {
   position: relative;
   color: #EDEDED;
@@ -11,14 +29,25 @@
   width: 75%;
 }
 
-.workTags {
-  width: 70%;
+#workSampleTags {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+  gap: 10px;
+  width: 75%;
   margin: auto;
-  background-color: #2B2B2B;
+  background-color: rgba(43, 43, 43, 0.5);
   color: #EDEDED;
   padding: 15px;
   border-radius: 15px;
   margin-bottom: 50px;
+}
+
+#workRole {
+  color: #EDEDED;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 3vw;
+  font-weight: bold;
 }
 
 .workPicturesContainer {
@@ -29,13 +58,6 @@
 
 .workPictures {
   position: relative;
-}
-
-.workPicturesTitle {
-  color: #EDEDED;
-  font-weight: bold;
-  font-size: 4vw;
-  text-align: center;
 }
 
 .workPicturesLeft {
