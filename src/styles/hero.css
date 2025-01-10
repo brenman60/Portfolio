@@ -21,7 +21,6 @@
   font-size: clamp(1.5em, 3vw, 3vw);
   padding: 10px 25px 10px 25px;
   font-weight: bold;
-  width: 60%;
   word-break: keep-all;
   max-height: 300px;
   overflow: hidden;

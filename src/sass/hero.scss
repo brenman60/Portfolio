@@ -27,7 +27,7 @@ $subtitleText: 2vw;
     font-size: clamp(1.5em, $titleText, $titleText);
     padding: 10px 25px 10px 25px;
     font-weight: bold;
-    width: clamp(50%, 60%, 75%);
+    //width: clamp(250px, 70%, 15000px);
     word-break: keep-all;
     max-height: 300px;
     overflow: hidden;

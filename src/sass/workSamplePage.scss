@@ -12,14 +12,25 @@
 }
 
 #workSampleLinks {
-    display: grid;
+    display: flex;
     list-style-type: none;
+    flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    width: 80%;
 }
 
 .workSampleLink {
     position: relative;
-    display: flex;
+    display: inline-block;
+    aspect-ratio: 1 / 1;
+    width: 125px;
+    height: 185px;
 }
 
 #workDescription {
@@ -66,7 +77,7 @@
     position: absolute;
     top: 50%;
     left: 10vw;
-    font-size: 2em;
+    font-size: 3em;
     z-index: 1;
     transform: translateY(-50%);
     background-color: rgba(colors.$background3, 0.5);
@@ -94,7 +105,7 @@
     position: absolute;
     top: 50%;
     right: 10vw;
-    font-size: 2em;
+    font-size: 3em;
     z-index: 1;
     transform: translateY(-50%);
     background-color: rgba(colors.$background3, 0.5);

@@ -6,7 +6,8 @@ import Tag from "./Tag";
 import { useNavigate } from 'react-router-dom';
 
 const WorkSample = ({
-  sample
+  sample,
+  id,
 }) => {
   const navigate = useNavigate();
   const { getTagNames } = useContext(TagsContext);
@@ -63,7 +64,7 @@ const WorkSample = ({
         <button className="workGalleryRight" onClick={() => changeImage("right")}>{">"}</button>
       </div>
       <h1 className="workName">{sample.name}</h1>
-      <a className="workLearnMore" onClick={() => navigate("/portfolio/workSample", { state: sample })}>Learn More</a>
+      <a className="workLearnMore" onClick={() => navigate(`/portfolio/workSample/${id}`)}>Learn More</a>
       <ul className="workTags">
         {getTagNames(sample.tags).map((tag, index) => {
           return(

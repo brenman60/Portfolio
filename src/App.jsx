@@ -59,7 +59,7 @@ const router = createBrowserRouter([
         element: <WorkSamples />,
       },
       {
-        path: "workSample",
+        path: "workSample/:id",
         element: <WorkSamplePage />,
       },
       {

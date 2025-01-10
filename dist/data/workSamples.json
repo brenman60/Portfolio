@@ -1,5 +1,5 @@
-[
-    {
+{
+    "data_cleaning_and_visualization": {
         "category": "Data Science & Automation",
         "status": "Completed",
         "name": "Data Cleaning & Visualization",
@@ -21,11 +21,11 @@
             },
             {
                 "name": "Download",
-                "link": "/portfolio/downloads/projects/DataCleaningVisualization.ipynb"
+                "link": "/portfolio/downloads/projects/DataCleaningVisualization.zip"
             },
             {
                 "name": "Presentation",
-                "link": "/portfolio/downloads/projects/CVSDataSciencePresentation.pdf"
+                "link": "/portfolio/downloads/projects/CVSDataSciencePresentation.zip"
             }
         ],
         "tags": [22, 63, 12, 13, 15],
@@ -34,7 +34,7 @@
 
         "banner": "/portfolio/images/projects/TankStrike/Example5.png",
         "time": "",
-        "role": "",
+        "role": "Data Scientist",
         "pictures": [
             {
                 "link": "/portfolio/images/projects/TankStrike/Example4.png",
@@ -42,7 +42,7 @@
             }
         ]
     },
-    {
+    "discord_bot": {
         "category": "Data Science & Automation",
         "status": "Unfinished",
         "name": "Discord Bot",
@@ -64,9 +64,16 @@
         "visibility": "visible",
 
         "banner": "/portfolio/images/projects/TankStrike/Example5.png",
-        "role": ""
+        "time": "",
+        "role": "",
+        "pictures": [
+            {
+                "link": "",
+                "caption": ""
+            }
+        ]
     },
-    {
+    "mod_downloader": {
         "category": "Data Science & Automation",
         "status": "Unfinished",
         "name": "Mod Downloader",
@@ -98,7 +105,7 @@
         ]
     },
 
-    {
+    "binary_clock": {
         "category": "Programming",
         "status": "Completed",
         "name": "Binary Clock",
@@ -133,7 +140,7 @@
             }
         ]
     },
-    {
+    "mod_downloader_csharp": {
         "category": "Programming",
         "status": "Completed",
         "name": "Mod Downloader",
@@ -151,7 +158,7 @@
             },
             {
                 "name": "Download",
-                "link": "/portfolio/downloads/projects/C#ModDownloader.zip"
+                "link": "/portfolio/downloads/projects/CSharpModDownloader.zip"
             }
         ],
         "tags": [67, 24, 12, 14, 20, 68],
@@ -168,7 +175,7 @@
             }
         ]
     },
-    {
+    "cryptography_speed_test": {
         "category": "Programming",
         "status": "Completed",
         "name": "Cryptography Speed Test -- REMAKE!!!!!!!! (with libraries)",
@@ -204,7 +211,7 @@
         ]
     },
 
-    {
+    "forlorn": {
         "category": "Game Development",
         "status": "Completed",
         "name": "Forlorn",
@@ -243,7 +250,7 @@
             }
         ]
     },
-    {
+    "tank_strike": {
         "category": "Game Development",
         "status": "Unfinished",
         "name": "Tank Strike",
@@ -278,7 +285,7 @@
             }
         ]
     },
-    {
+    "darkening": {
         "category": "Game Development",
         "status": "Completed",
         "name": "Darkening",
@@ -313,4 +320,4 @@
             }
         ]
     }
-]
+}

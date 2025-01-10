@@ -1,18 +1,18 @@
 import "../styles/workSamplePage.css";
 import { motion } from "framer-motion";
-import { useLocation } from "react-router-dom";
 import Hero from "../components/Hero";
 import { TagsContext } from "../components/TagsProvider";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import Tag from "../components/Tag";
 import PageDivider from "../components/PageDivider";
 import Link from "../components/Link";
 
 const WorkSamplePage = () => {
-  const location = useLocation();
-  const workSample = location.state;
+  const { id } = useParams();
+  const [workSample, setWorkSample] = useState(null);
   const { getTagNames } = useContext(TagsContext);
-  const [image, setImage] = useState(workSample.pictures[0]);
+  const [image, setImage] = useState(null);
 
   const changeImage = (direction) => {
     var currentIndex = workSample.pictures.indexOf(image);
@@ -31,6 +31,17 @@ const WorkSamplePage = () => {
 
     setImage(workSample.pictures[currentIndex]);
   };
+
+  useEffect(() => {
+    fetch("../data/workSamples.json")
+    .then(response => response.json())
+    .then(jsonData => { setWorkSample(jsonData[id]); setImage(jsonData[id].pictures[0]) })
+    .catch(error => console.error("Error loading JSON: ", error));
+  }, [id]);
+
+  if (!workSample) {
+    return <motion.div></motion.div>
+  }
 
   return (
     <motion.div
@@ -78,4 +89,4 @@ const WorkSamplePage = () => {
   )
 }
 
-export default WorkSamplePage
+export default WorkSamplePage;
