@@ -29,11 +29,11 @@
             }
         ],
         "tags": [22, 63, 12, 13, 15],
-        "description": "During a CVS Data Science Mentorship, I created a Jupyter Notebook which aimed to clean, transform, and visualize, and model a prediction algorithm based on  anonymized hospital data. Every one of these tasks were programmed in Python, utilizing various libraries such as Pandas, Matplotlib, Seaborn, and Scikit-learn. The brunt of the project consisted of cleaning and transforming the data, which required the use of analytical thinking in order to ascertain the transformations and cleaning required. At the very end of the mentorship, we were instructed to put together an informative presentation to give to our peers, which required various learned presentation design skills, such as proper headlines, trackers, and useful charts.",
+        "description": "During a CVS Data Science Mentorship, I created a Jupyter Notebook which aimed to clean, transform, visualize, and model a prediction algorithm based on anonymized hospital data. Every one of these tasks were programmed in Python, utilizing various libraries such as Pandas, Matplotlib, Seaborn, and Scikit-learn. The brunt of the project consisted of cleaning and transforming the data, which required the use of analytical thinking in order to ascertain the transformations and cleaning required. At the very end of the mentorship, we were instructed to put together an informative presentation to give to our peers, which required various learned presentation design skills, such as proper headlines, trackers, and useful charts.",
         "visibility": "visible",
 
         "banner": "/portfolio/images/projects/TankStrike/Example5.png",
-        "time": "",
+        "time": "September 2024 - November 2024",
         "role": "Data Scientist",
         "pictures": [
             {
