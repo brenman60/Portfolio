@@ -18,8 +18,8 @@ const WorkSampleList = () => {
 
   return (
     <div className="workSampleList">
-      {Object.entries(data).map(([key, item]) => (
-        <WorkSample key={key} sample={item} id={key} />
+      {Object.entries(data).map(([key, item], index) => (
+        <WorkSample key={key} sample={item} id={index} identifier={key} />
       ))}
     </div>
   )

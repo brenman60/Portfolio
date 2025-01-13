@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom';
 const WorkSample = ({
   sample,
   id,
+  identifier,
 }) => {
   const navigate = useNavigate();
   const { getTagNames } = useContext(TagsContext);
@@ -16,7 +17,7 @@ const WorkSample = ({
   const [isVisible, setVisible] = useState(false);
 
   useEffect(() => {
-    const element = document.getElementById(sample.name);
+    const element = document.getElementById(`workSample${id}`);
     if (!element) {
       return;
     }
@@ -32,7 +33,7 @@ const WorkSample = ({
     observer.observe(element);
 
     return () => observer.disconnect();
-  }, []);
+  }, [id]);
 
   const changeImage = (direction) => {
     var currentIndex = sample.gallery.indexOf(image);
@@ -55,7 +56,7 @@ const WorkSample = ({
   const hidden = sample.visibility == "hidden";
 
   return (
-    <div id={sample.name} className={`workSample ${isVisible ? "open" : "closed"}`} style={hidden ?
+    <div id={`workSample${id}`} className={`workSample ${isVisible ? "open" : "closed"}`} style={hidden ?
       { 
         visibility: "hidden",
         display: "none",
@@ -75,7 +76,7 @@ const WorkSample = ({
         <button className="workGalleryRight" onClick={() => changeImage("right")}>{">"}</button>
       </div>
       <h1 className="workName">{sample.name}</h1>
-      <a className="workLearnMore" onClick={() => navigate(`/portfolio/workSample/${id}`)}>Learn More</a>
+      <a className="workLearnMore" onClick={() => navigate(`/portfolio/workSample/${identifier}`)}>Learn More</a>
       <ul className="workTags">
         {getTagNames(sample.tags).map((tag, index) => {
           return(
