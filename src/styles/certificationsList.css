@@ -22,7 +22,7 @@
   margin-right: auto;
   margin-top: 50px;
   margin-bottom: 50px;
-  background-color: #1b1b1b;
+  background-color: rgba(27, 27, 27, 0.5);
   padding: 25px;
   border-radius: 15px;
 }
@@ -54,30 +54,6 @@
   height: 50px;
   width: 50px;
 }
-.certGroupButtonWrapper::before {
-  content: "";
-  position: absolute;
-  top: -4px;
-  left: -4px;
-  right: -4px;
-  bottom: -4px;
-  z-index: 1;
-  border-radius: 15px;
-  background: linear-gradient(to top, rgba(51, 157, 228, 0.05), #339de4, rgba(51, 157, 228, 0.05));
-  background-repeat: repeat;
-  background-size: 200% 200%;
-  animation-name: glowMove;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-fill-mode: forwards;
-  filter: blur(5px);
-  opacity: 0;
-  transition: opacity 0.15s ease-in;
-  pointer-events: none;
-}
-.certGroupButtonWrapper:hover::before {
-  opacity: 0.5;
-}
 
 .certGroupButton {
   position: absolute;
@@ -88,17 +64,20 @@
   border-radius: 5px;
   z-index: 2;
   cursor: pointer;
-  background-color: #2B2B2B;
-  border-color: #339de4;
-  transition: border-width 0.05s ease-in-out;
+}
+.certGroupButton {
+  background-color: rgba(43, 43, 43, 0.35);
+  border-color: rgba(237, 237, 237, 0.25);
+  transition: background-color 0.15s ease-in, border-color 0.15s ease-in;
+}
+.certGroupButton:hover {
+  border-width: 1px;
+  background-color: #2b2b2b;
+  border-color: rgba(237, 237, 237, 0.75);
 }
 
 .certGroupButton.disabled {
   pointer-events: none;
-}
-
-.certGroupButton:hover {
-  border-width: 2px;
 }
 
 .certGroupFooter {

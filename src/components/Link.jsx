@@ -14,6 +14,7 @@ const Link = ({
     "YouTube": "/portfolio/images/icons/youtube.png",
     "Kaggle": "/portfolio/images/icons/kaggle.png",
     "Presentation": "/portfolio/images/icons/presentation.png",
+    "LinkedIn": "/portfolio/images/icons/linkedin.png",
   }
 
   return (

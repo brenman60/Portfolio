@@ -3,7 +3,7 @@
 
 .cert {
     position: relative;
-    background-color: colors.$background1;
+    background-color: rgba(colors.$background2, 0.35);
     width: 300px;
     height: 100%;
     border-radius: 10px;
@@ -12,8 +12,14 @@
 
     transform: translateY(-15px);
     z-index: 2;
-    box-shadow: inset 0 0 0 0px colors.$heading;
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out, background-color 0.25s ease-in-out, box-shadow 0.05s ease-in-out;
+    box-shadow: inset 0 0 0 0px rgba(colors.$text, 0.25);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out, background-color 0.15s ease-in, box-shadow 0.15s ease-in;
+
+    &:hover {
+        box-shadow: inset 0 0 0 1px rgba(colors.$text, 0.75);
+        background-color: rgba(colors.$background2, 1);
+        cursor: pointer;
+    }
 }
 
 .cert.open {
@@ -26,13 +32,8 @@
     transform: translateY(-15px);
 }
 
-.cert:hover {
-    box-shadow: inset 0 0 0 2px colors.$heading;
-    cursor: pointer;
-}
-
 .certWrapper {
-    @include glowEffect();
+    //@include glowEffect();
     position: relative;
 }
 

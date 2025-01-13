@@ -1,5 +1,6 @@
 @use "colors.scss";
 @import "glowEffect";
+@import "button";
 
 .certificationsGroup {
     position: relative;
@@ -8,7 +9,7 @@
     margin-right: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    background-color: colors.$background3;
+    background-color: rgba(colors.$background3, 0.5);
     padding: 25px;
     border-radius: 15px;
 }
@@ -40,8 +41,6 @@
     right: 25px;
     height: 50px;
     width: 50px;
-
-    @include glowEffect();
 }
 
 .certGroupButton {
@@ -53,18 +52,12 @@
     border-radius: 5px;
     z-index: 2;
     cursor: pointer;
-    background-color: colors.$background2;
-    border-color: colors.$heading;
 
-    transition: border-width 0.05s ease-in-out;
+    @include button();
 }
 
 .certGroupButton.disabled {
     pointer-events: none;
-}
-
-.certGroupButton:hover {
-    border-width: 2px;
 }
 
 .certGroupFooter {

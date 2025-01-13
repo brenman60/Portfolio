@@ -52,15 +52,26 @@ const WorkSample = ({
     setImage(sample.gallery[currentIndex]);
   };
 
+  const hidden = sample.visibility == "hidden";
+
   return (
-    <div id={sample.name} className={`workSample ${isVisible ? "open" : "closed"}`}>
+    <div id={sample.name} className={`workSample ${isVisible ? "open" : "closed"}`} style={hidden ?
+      { 
+        visibility: "hidden",
+        display: "none",
+      } : {
+        visibility: "visible",
+      }}>
       <div className="workOrganization">
         <p className="workCategory">{sample.category}</p>
         <p className={`workStatus ${sample.status.toString().toLowerCase()}`}>{sample.status}</p>
       </div>
+      <p className="workTime">{sample.time}</p>
       <div className="workGallery">
         <button className="workGalleryLeft" onClick={() => changeImage("left")}>{"<"}</button>
+        <div className="workGalleryImageContainer">
         <img className="workGalleryImage" src={image} />
+        </div>
         <button className="workGalleryRight" onClick={() => changeImage("right")}>{">"}</button>
       </div>
       <h1 className="workName">{sample.name}</h1>
@@ -76,6 +87,6 @@ const WorkSample = ({
       </ul>
     </div>
   )
-}
+};
 
-export default WorkSample
+export default WorkSample;

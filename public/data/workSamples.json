@@ -4,11 +4,10 @@
         "status": "Completed",
         "name": "Data Cleaning & Visualization",
         "gallery": [
-            "/portfolio/images/projects/TankStrike/Example1.png",
-            "/portfolio/images/projects/TankStrike/Example2.png",
-            "/portfolio/images/projects/TankStrike/Example3.png",
-            "/portfolio/images/projects/TankStrike/Example4.png",
-            "/portfolio/images/projects/TankStrike/Example5.png"
+            "/portfolio/images/projects/DataCleaningVisualization/1.jpg",
+            "/portfolio/images/projects/DataCleaningVisualization/2.jpg",
+            "/portfolio/images/projects/DataCleaningVisualization/3.jpg",
+            "/portfolio/images/projects/DataCleaningVisualization/4.jpg"
         ],
         "links": [
             {
@@ -29,29 +28,41 @@
             }
         ],
         "tags": [22, 63, 12, 13, 15],
-        "description": "During a CVS Data Science Mentorship, I created a Jupyter Notebook which aimed to clean, transform, and visualize, and model a prediction algorithm based on  anonymized hospital data. Every one of these tasks were programmed in Python, utilizing various libraries such as Pandas, Matplotlib, Seaborn, and Scikit-learn. The brunt of the project consisted of cleaning and transforming the data, which required the use of analytical thinking in order to ascertain the transformations and cleaning required. At the very end of the mentorship, we were instructed to put together an informative presentation to give to our peers, which required various learned presentation design skills, such as proper headlines, trackers, and useful charts.",
+        "description": "During a CVS Data Science Mentorship, I created a Jupyter Notebook which aimed to clean, transform, visualize, and model a prediction algorithm based on anonymized hospital data. Every one of these tasks were programmed in Python, utilizing various libraries such as Pandas, Matplotlib, Seaborn, and Scikit-learn. The brunt of the project consisted of cleaning and transforming the data, which required the use of analytical thinking in order to ascertain the transformations and cleaning required. At the very end of the mentorship, we were instructed to put together an informative presentation to give to our peers, which required various learned presentation design skills, such as proper headlines, trackers, and useful charts.",
         "visibility": "visible",
 
-        "banner": "/portfolio/images/projects/TankStrike/Example5.png",
-        "time": "",
+        "banner": "/portfolio/images/projects/DataCleaningVisualization/4.jpg",
+        "time": "September 2024 - November 2024",
         "role": "Data Scientist",
         "pictures": [
             {
-                "link": "/portfolio/images/projects/TankStrike/Example4.png",
-                "caption": "Example Caption"
+                "link": "/portfolio/images/projects/DataCleaningVisualization/1.jpg",
+                "caption": ""
+            },
+            {
+                "link": "/portfolio/images/projects/DataCleaningVisualization/2.jpg",
+                "caption": ""
+            },
+            {
+                "link": "/portfolio/images/projects/DataCleaningVisualization/3.jpg",
+                "caption": ""
+            },
+            {
+                "link": "/portfolio/images/projects/DataCleaningVisualization/4.jpg",
+                "caption": ""
             }
         ]
     },
     "discord_bot": {
         "category": "Data Science & Automation",
-        "status": "Unfinished",
+        "status": "Completed",
         "name": "Discord Bot",
         "gallery": [
-            "/portfolio/images/projects/TankStrike/Example1.png",
-            "/portfolio/images/projects/TankStrike/Example2.png",
-            "/portfolio/images/projects/TankStrike/Example3.png",
-            "/portfolio/images/projects/TankStrike/Example4.png",
-            "/portfolio/images/projects/TankStrike/Example5.png"
+            "/portfolio/images/projects/DiscordBot/1.jpg",
+            "/portfolio/images/projects/DiscordBot/2.jpg",
+            "/portfolio/images/projects/DiscordBot/3.jpg",
+            "/portfolio/images/projects/DiscordBot/4.jpg",
+            "/portfolio/images/projects/DiscordBot/5.jpg"
         ],
         "links": [
             {
@@ -60,29 +71,44 @@
             }
         ],
         "tags": [22, 12, 14, 16, 17, 57],
-        "description": "Template Description",
+        "description": "Created as a means to extend my knowledge of Python, this Discord bot contains some features like moderation, leveling, and configuration. It also contains commands related to my accounts and projects. Each part of the bot is very modular, and is able to be removed simply to removing the Python file itself.",
         "visibility": "visible",
 
-        "banner": "/portfolio/images/projects/TankStrike/Example5.png",
-        "time": "",
-        "role": "",
+        "banner": "/portfolio/images/projects/DiscordBot/5.jpg",
+        "time": "December 2024 - January 2025",
+        "role": "Programmer",
         "pictures": [
             {
-                "link": "",
+                "link": "/portfolio/images/projects/DiscordBot/1.jpg",
+                "caption": ""
+            },
+            {
+                "link": "/portfolio/images/projects/DiscordBot/2.jpg",
+                "caption": ""
+            },
+            {
+                "link": "/portfolio/images/projects/DiscordBot/3.jpg",
+                "caption": ""
+            },
+            {
+                "link": "/portfolio/images/projects/DiscordBot/4.jpg",
+                "caption": ""
+            },
+            {
+                "link": "/portfolio/images/projects/DiscordBot/5.jpg",
                 "caption": ""
             }
         ]
     },
     "mod_downloader": {
         "category": "Data Science & Automation",
-        "status": "Unfinished",
+        "status": "Completed",
         "name": "Mod Downloader",
         "gallery": [
-            "/portfolio/images/projects/TankStrike/Example1.png",
-            "/portfolio/images/projects/TankStrike/Example2.png",
-            "/portfolio/images/projects/TankStrike/Example3.png",
-            "/portfolio/images/projects/TankStrike/Example4.png",
-            "/portfolio/images/projects/TankStrike/Example5.png"
+            "/portfolio/images/projects/PythonModDownloader/1.jpg",
+            "/portfolio/images/projects/PythonModDownloader/2.jpg",
+            "/portfolio/images/projects/PythonModDownloader/3.jpg",
+            "/portfolio/images/projects/PythonModDownloader/4.jpg"
         ],
         "links": [
             {
@@ -91,15 +117,27 @@
             }
         ],
         "tags": [22, 24, 12, 14, 20],
-        "description": "Template Description",
-        "visibility": "hidden",
+        "description": "This was my first attempt at creating a Minecraft mod downloader. The main point of the program was to check the user's current mod list version, determine if they need an updated list, and download an updated version as a result. The program was planned to contain an auto updating feature, to allow for updates without any user input needed. However, this never made it into the final version, after I had decided on a successor to this program.",
+        "visibility": "visible",
 
-        "banner": "/portfolio/images/projects/TankStrike/Example5.png",
-        "time": "",
-        "role": "",
+        "banner": "/portfolio/images/projects/PythonModDownloader/1.jpg",
+        "time": "September 2023",
+        "role": "Programmer",
         "pictures": [
             {
-                "link": "",
+                "link": "/portfolio/images/projects/PythonModDownloader/1.jpg",
+                "caption": ""
+            },
+            {
+                "link": "/portfolio/images/projects/PythonModDownloader/2.jpg",
+                "caption": ""
+            },
+            {
+                "link": "/portfolio/images/projects/PythonModDownloader/3.jpg",
+                "caption": ""
+            },
+            {
+                "link": "/portfolio/images/projects/PythonModDownloader/4.jpg",
                 "caption": ""
             }
         ]
@@ -110,11 +148,10 @@
         "status": "Completed",
         "name": "Binary Clock",
         "gallery": [
-            "/portfolio/images/projects/TankStrike/Example1.png",
-            "/portfolio/images/projects/TankStrike/Example2.png",
-            "/portfolio/images/projects/TankStrike/Example3.png",
-            "/portfolio/images/projects/TankStrike/Example4.png",
-            "/portfolio/images/projects/TankStrike/Example5.png"
+            "/portfolio/images/projects/BinaryClock/1.jpg",
+            "/portfolio/images/projects/BinaryClock/2.jpg",
+            "/portfolio/images/projects/BinaryClock/3.jpg",
+            "/portfolio/images/projects/BinaryClock/4.jpg"
         ],
         "links": [
             {
@@ -127,15 +164,27 @@
             }
         ],
         "tags": [64, 65, 12, 17],
-        "description": "Template Description",
+        "description": "As extra credit for my Information Technology class, I created a binary clock application in Visual Basic using Windows Form Apps. The application take current time values, and performs some basic math to display the time in a binary format. I utilized various programming practices to make this application as efficient and easy to read as possible.",
         "visibility": "visible",
 
-        "banner": "/portfolio/images/projects/TankStrike/Example5.png",
-        "time": "",
-        "role": "",
+        "banner": "/portfolio/images/projects/BinaryClock/2.jpg",
+        "time": "December 2024",
+        "role": "Programmer",
         "pictures": [
             {
-                "link": "",
+                "link": "/portfolio/images/projects/BinaryClock/1.jpg",
+                "caption": ""
+            },
+            {
+                "link": "/portfolio/images/projects/BinaryClock/2.jpg",
+                "caption": ""
+            },
+            {
+                "link": "/portfolio/images/projects/BinaryClock/3.jpg",
+                "caption": ""
+            },
+            {
+                "link": "/portfolio/images/projects/BinaryClock/4.jpg",
                 "caption": ""
             }
         ]
@@ -145,32 +194,39 @@
         "status": "Completed",
         "name": "Mod Downloader",
         "gallery": [
-            "/portfolio/images/projects/TankStrike/Example1.png",
-            "/portfolio/images/projects/TankStrike/Example2.png",
-            "/portfolio/images/projects/TankStrike/Example3.png",
-            "/portfolio/images/projects/TankStrike/Example4.png",
-            "/portfolio/images/projects/TankStrike/Example5.png"
+            "/portfolio/images/projects/CSharpModDownloader/1.jpg",
+            "/portfolio/images/projects/CSharpModDownloader/2.jpg",
+            "/portfolio/images/projects/CSharpModDownloader/3.jpg",
+            "/portfolio/images/projects/CSharpModDownloader/4.jpg"
         ],
         "links": [
             {
                 "name": "GitHub",
                 "link": "https://github.com/brenman60/CSharp-Mod-Downloader"
-            },
-            {
-                "name": "Download",
-                "link": "/portfolio/downloads/projects/CSharpModDownloader.zip"
             }
         ],
         "tags": [67, 24, 12, 14, 20, 68],
-        "description": "Template Description",
+        "description": "Similar to the my Python Mod Downloader, this project aims to accomplish the same goal. However, this version lacks any self updating features, due to another project becoming this one's successor. This project also contains Minecraft shaderpack downloading, allowing the user to automatically download a shaderpack, which moves itself to the correct folders once downloaded.",
         "visibility": "visible",
 
-        "banner": "/portfolio/images/projects/TankStrike/Example5.png",
-        "time": "",
-        "role": "",
+        "banner": "/portfolio/images/projects/CSharpModDownloader/4.jpg",
+        "time": "November 2023",
+        "role": "Programmer",
         "pictures": [
             {
-                "link": "",
+                "link": "/portfolio/images/projects/CSharpModDownloader/1.jpg",
+                "caption": ""
+            },
+            {
+                "link": "/portfolio/images/projects/CSharpModDownloader/2.jpg",
+                "caption": ""
+            },
+            {
+                "link": "/portfolio/images/projects/CSharpModDownloader/3.jpg",
+                "caption": ""
+            },
+            {
+                "link": "/portfolio/images/projects/CSharpModDownloader/4.jpg",
                 "caption": ""
             }
         ]
@@ -201,11 +257,57 @@
         "visibility": "hidden",
 
         "banner": "/portfolio/images/projects/TankStrike/Example5.png",
-        "time": "",
+        "time": "March 2024",
         "role": "",
         "pictures": [
             {
                 "link": "",
+                "caption": ""
+            }
+        ]
+    },
+    "modpack_manager": {
+        "category": "Programming",
+        "status": "Completed",
+        "name": "Modpack Manager",
+        "gallery": [
+            "/portfolio/images/projects/ModpackManager/2.jpg",
+            "/portfolio/images/projects/ModpackManager/1.jpg",
+            "/portfolio/images/projects/ModpackManager/3.jpg",
+            "/portfolio/images/projects/ModpackManager/4.jpg"
+        ],
+        "links": [
+            {
+                "name": "GitHub",
+                "link": "https://github.com/brenman60/Modpack-Manager"
+            },
+            {
+                "name": "Download",
+                "link": "/portfolio/downloads/projects/ModpackManager.zip"
+            }
+        ],
+        "tags": [30, 69, 12, 16, 15],
+        "description": "Template Description",
+        "visibility": "visible",
+
+        "banner": "/portfolio/images/projects/ModpackManager/1.jpg",
+        "time": "December 2023",
+        "role": "",
+        "pictures": [
+            {
+                "link": "/portfolio/images/projects/ModpackManager/1.jpg",
+                "caption": ""
+            },
+            {
+                "link": "/portfolio/images/projects/ModpackManager/2.jpg",
+                "caption": ""
+            },
+            {
+                "link": "/portfolio/images/projects/ModpackManager/3.jpg",
+                "caption": ""
+            },
+            {
+                "link": "/portfolio/images/projects/ModpackManager/4.jpg",
                 "caption": ""
             }
         ]
@@ -216,16 +318,18 @@
         "status": "Completed",
         "name": "Forlorn",
         "gallery": [
-            "/portfolio/images/projects/TankStrike/Example1.png",
-            "/portfolio/images/projects/TankStrike/Example2.png",
-            "/portfolio/images/projects/TankStrike/Example3.png",
-            "/portfolio/images/projects/TankStrike/Example4.png",
-            "/portfolio/images/projects/TankStrike/Example5.png"
+            "/portfolio/images/projects/Forlorn/1.jpg",
+            "/portfolio/images/projects/Forlorn/2.jpg",
+            "/portfolio/images/projects/Forlorn/3.jpg"
         ],
         "links": [
             {
                 "name": "Itch",
                 "link": "https://brenman60.itch.io/forlorn"
+            },
+            {
+               "name": "Download",
+               "link": "https://github.com/brenman60/Forlorn-Page/releases/latest/download/Windows.zip"
             },
             {
                 "name": "Google Play",
@@ -237,15 +341,35 @@
             }
         ],
         "tags": [71, 72, 68, 67, 70, 57, 26, 13, 17],
-        "description": "Template Description",
+        "description": "Created during a game development project in my Information Technology class, Forlorn was based off the theme of immigration. In this project, everyone worked in pairs to create both a game and website, I worked on the game portion. ",
         "visibility": "visible",
 
-        "banner": "/portfolio/images/projects/TankStrike/Example5.png",
-        "time": "",
-        "role": "",
+        "banner": "/portfolio/images/projects/Forlorn/6.jpg",
+        "time": "October 2024 - December 2024",
+        "role": "Programmer",
         "pictures": [
             {
-                "link": "",
+                "link": "/portfolio/images/projects/Forlorn/1.jpg",
+                "caption": ""
+            },
+            {
+                "link": "/portfolio/images/projects/Forlorn/2.jpg",
+                "caption": ""
+            },
+            {
+                "link": "/portfolio/images/projects/Forlorn/3.jpg",
+                "caption": ""
+            },
+            {
+                "link": "/portfolio/images/projects/Forlorn/4.jpg",
+                "caption": ""
+            },
+            {
+                "link": "/portfolio/images/projects/Forlorn/5.jpg",
+                "caption": ""
+            },
+            {
+                "link": "/portfolio/images/projects/Forlorn/6.jpg",
                 "caption": ""
             }
         ]
@@ -276,7 +400,7 @@
         "visibility": "hidden",
 
         "banner": "/portfolio/images/projects/TankStrike/Example5.png",
-        "time": "",
+        "time": "April 2022 - Present",
         "role": "",
         "pictures": [
             {
@@ -311,7 +435,7 @@
         "visibility": "hidden",
 
         "banner": "/portfolio/images/projects/TankStrike/Example5.png",
-        "time": "",
+        "time": "August 2023",
         "role": "",
         "pictures": [
             {

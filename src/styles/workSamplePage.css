@@ -74,8 +74,8 @@
 .workPicturesLeft {
   position: absolute;
   top: 50%;
-  left: 10vw;
-  font-size: 3em;
+  left: 8vw;
+  font-size: clamp(0.25em, 5vw, 3em);
   z-index: 1;
   transform: translateY(-50%);
   background-color: rgba(27, 27, 27, 0.5);
@@ -88,20 +88,29 @@
   transform: translateY(-50%) translateX(-15%);
 }
 
+.workImageContainer {
+  width: 90%;
+  height: 500px;
+  overflow: hidden;
+  margin: auto;
+}
+
 .workPicturesImage {
   border-radius: 10px;
   border-width: 2px;
   border-color: rgba(27, 27, 27, 0.5);
+  width: 100%;
   height: auto;
-  width: 85%;
-  margin: auto;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .workPicturesRight {
   position: absolute;
   top: 50%;
-  right: 10vw;
-  font-size: 3em;
+  right: 8vw;
+  font-size: clamp(0.25em, 5vw, 3em);
   z-index: 1;
   transform: translateY(-50%);
   background-color: rgba(27, 27, 27, 0.5);

@@ -1,7 +1,7 @@
 @use "colors.scss";
 
 .resume {
-    width: 90%;
+    width: 50%;
     height: auto;
     margin: auto;
     margin-bottom: 25px;
@@ -11,8 +11,4 @@
     border-width: 1px;
     border-color: colors.$background3;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-}
-
-.resumeImage {
-    
 }

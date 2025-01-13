@@ -51,7 +51,11 @@ const WorkSamplePage = () => {
       exit={{ opacity: 0 }}
       transition={{ type: "tween", duration: 1, ease: "anticipate" }}
     >
-      <Hero title={workSample.name} subtitle={workSample.status} image={workSample.banner} height={400} />
+      <Hero title={workSample.name} subtitle={
+        <>
+          {workSample.status} <br /> {workSample.time}
+        </>
+      } image={workSample.banner} height={400} />
       <ul id="workSampleLinks">
         {workSample.links.map((item, index) => (
           <li key={index} className="workSampleLink">
@@ -80,13 +84,15 @@ const WorkSamplePage = () => {
         <h1 className="workSectionTitle">Media</h1>
         <div className="workPictures">
           <button className="workPicturesLeft" onClick={() => changeImage("left")}>{"<"}</button>
-          <img className="workPicturesImage" src={image.link} />
+          <div className="workImageContainer">
+            <img className="workPicturesImage" src={image.link} />
+          </div>
           <button className="workPicturesRight" onClick={() => changeImage("right")}>{">"}</button>
         </div>
       </div>
       <PageDivider height="4px" width="80%" opacity="0.5" />
     </motion.div>
   )
-}
+};
 
 export default WorkSamplePage;
