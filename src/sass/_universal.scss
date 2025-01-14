@@ -7,6 +7,10 @@ $mobileWidth: 1400px;
     font-weight: normal;
 }
 
+#root {
+    margin-bottom: 150px;
+}
+
 html {
     background-color: colors.$background1;
     overflow-y: scroll;

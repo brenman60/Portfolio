@@ -15,6 +15,7 @@ import WorkSamplePage from "./pages/WorkSamplePage";
 import NotFound from "./pages/NotFound";
 import Resume from "./pages/Resume";
 import { TagsProvider } from "./components/TagsProvider";
+import Footer from "./components/Footer";
 
 export const colorScheme = {
   background1: "#1E1E1E",
@@ -31,6 +32,7 @@ const router = createBrowserRouter([
       <>
         <Navbar />
         <MainLayout />
+        <Footer />
       </>
     ),
     children: [

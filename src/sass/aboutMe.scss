@@ -1,0 +1,78 @@
+@use "colors.scss";
+@use "universal.scss";
+
+#aboutMeContainer {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 80px;
+}
+
+#mainPhoto {
+    height: auto;
+    width: 50%;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: rgba(colors.$text, 0.5);
+    margin: auto;
+}
+
+#aboutDescription {
+    font-size: 1em;
+}
+
+#topSkillsTitle {
+    margin: auto;
+    color: colors.$text;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#topSkills {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 50%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(colors.$background2, 0.5);
+    color: colors.$text;
+    padding: 15px;
+    grid-column: 2;
+}
+
+@media (min-width: 800px) {
+    // PC
+    #aboutMeContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #aboutMeColumn1 {
+        grid-column: 1;
+    }
+
+    #aboutMeColumn2 {
+        grid-column: 2;
+    }
+}
+
+@media (max-width: 800px) {
+    // Mobile
+    #aboutMeContainer {
+        grid-template-columns: 1fr;
+    }
+
+    #aboutMeColumn1 {
+        grid-column: 1;
+    }
+
+    #aboutMeColumn2 {
+        grid-column: 1;
+    }
+}

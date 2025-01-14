@@ -1,5 +1,4 @@
 @use "colors.scss";
-@import "glowEffect";
 
 .resumeDownload {
     position: relative;
@@ -12,17 +11,18 @@
     font-size: 2vw;
     text-align: center;
     z-index: 2;
-    background-color: colors.$background2;
+    background-color: rgba(colors.$background2, 0.35);
     color: colors.$text;
     border-radius: 5px;
-    border-width: 1px;
-    border-color: colors.$background3;
 
-    transition: border-color 0.25s ease-in-out;
-}
+    box-shadow: inset 0 0 0 0px rgba(colors.$text, 0.25);
+    transition: all 0.15s ease-in;
 
-.resumeDownload:hover {
-    border-color: colors.$heading;
+    &:hover {
+        box-shadow: inset 0 0 0 1px rgba(colors.$text, 0.75);
+        background-color: rgba(colors.$background2, 1);
+        cursor: pointer;
+    }
 }
 
 .resumeDownloadWrapper {
@@ -37,5 +37,4 @@
 
     margin: auto;
     margin-bottom: 50px;
-    @include glowEffect();
 }

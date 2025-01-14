@@ -3,6 +3,10 @@
   font-weight: normal;
 }
 
+#root {
+  margin-bottom: 150px;
+}
+
 html {
   background-color: #1E1E1E;
   overflow-y: scroll;
@@ -29,6 +33,9 @@ html {
   text-align: center;
   height: 100%;
   font-size: 1.15em;
+  border-bottom: #339de4;
+  border-style: solid;
+  border-bottom-width: 0px;
 }
 
 #nav .navLink:hover {
@@ -57,9 +64,7 @@ html {
 
 @media (min-width: 1400px) {
   .navLink.active {
-    border-bottom: #339de4;
     border-bottom-width: 5px;
-    border-style: solid;
   }
 }
 @media (max-width: 1400px) {

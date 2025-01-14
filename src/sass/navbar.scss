@@ -25,6 +25,9 @@ $navHeight: $navHeightRaw + px;
   text-align: center;
   height: 100%;
   font-size: clamp(0.75em, 1.15em, 1.15em);
+  border-bottom: colors.$heading;
+  border-style: solid;
+  border-bottom-width: 0px;
 }
 
 #nav .navLink:hover {
@@ -53,9 +56,7 @@ $navHeight: $navHeightRaw + px;
 
 @media (min-width: universal.$mobileWidth) {
   .navLink.active {
-    border-bottom: colors.$heading;
     border-bottom-width: 5px;
-    border-style: solid;
   }
 }
 

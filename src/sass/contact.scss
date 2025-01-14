@@ -1,3 +1,5 @@
+@use "colors.scss";
+
 #contactList {
     display: flex;
     list-style-type: none;
@@ -18,4 +20,16 @@
     aspect-ratio: 1 / 1;
     width: 125px;
     height: 185px;
+}
+
+#contactEmail {
+    display: flex;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    color: colors.$text;
+    font-size: 2em;
+    margin-top: 50px;
 }
