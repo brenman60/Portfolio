@@ -36,6 +36,7 @@
   background-color: rgba(51, 157, 228, 0.35);
   border-color: rgba(51, 157, 228, 0.5);
   transition: opacity 0.15s ease-in;
+  cursor: default;
 }
 .workCategory:hover {
   opacity: 0.75;
@@ -45,6 +46,7 @@
   background-color: rgba(51, 157, 228, 0.35);
   border-color: rgba(51, 157, 228, 0.5);
   transition: opacity 0.15s ease-in;
+  cursor: default;
 }
 .workStatus:hover {
   opacity: 0.75;
@@ -61,12 +63,13 @@
 }
 
 .workTime {
+  display: inline-block;
   margin-top: 45px;
-  width: 100%;
   background-color: rgba(43, 43, 43, 0.35);
   padding: 0px 5px 0px 5px;
   border-radius: 2px;
   box-shadow: inset 0 0 0 0px rgba(237, 237, 237, 0.25);
+  cursor: default;
   transition: all 0.15s ease-in;
 }
 .workTime:hover {

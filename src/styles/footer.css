@@ -17,9 +17,25 @@
 #copyrightFooter {
   float: left;
   display: flex;
+  position: relative;
   justify-content: center;
   width: auto;
   color: #EDEDED;
+  cursor: default;
+}
+#copyrightFooter::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: rgba(237, 237, 237, 0.75);
+  width: 0%;
+  left: 50%;
+  bottom: 0;
+  transition: all 0.25s ease-out;
+}
+#copyrightFooter:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 #footerIcons {

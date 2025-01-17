@@ -75,7 +75,7 @@ const CertificationsList = ({
     <div className="certificationsGroup">
         <h1 className="certGroupTitle">{title}</h1>
         <div className="certGroupButtonWrapper" style={{ pointerEvents: buttonDisabled ? "none" : "auto" }}>
-          <button className="certGroupButton" onClick={(e) => toggleList(e.target)}>...</button>
+          <button className="certGroupButton" onClick={(e) => toggleList(e.target)}>&#x2022; &#x2022; &#x2022;</button>
         </div>
         <ul className={`certificationsList ${isOpen ? "open" : "closed"}`} ref={listRef}  style={isOpen ? {
           height: `${listRef.current?.scrollHeight}px`

@@ -17,19 +17,56 @@ html {
   -moz-column-gap: 20px;
        column-gap: 20px;
   row-gap: 80px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #mainPhoto {
   height: auto;
-  width: 50%;
+  width: 80%;
   border-radius: 5px;
   border-width: 2px;
   border-color: rgba(237, 237, 237, 0.5);
   margin: auto;
 }
 
+#aboutDescriptionTitle {
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  color: #EDEDED;
+  font-weight: bold;
+  font-size: 4em;
+  text-align: left;
+  margin-bottom: 15px;
+  cursor: default;
+}
+#aboutDescriptionTitle::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 5px;
+  border-radius: 15px;
+  width: 0%;
+  bottom: 0;
+  background-color: rgba(237, 237, 237, 0);
+  transition: width 0.5s ease-out, background-color 0.5s ease-out;
+}
+#aboutDescriptionTitle:hover::after {
+  width: 90%;
+  background-color: rgba(237, 237, 237, 0.75);
+}
+
 #aboutDescription {
-  font-size: 1em;
+  font-size: 1.5em;
+  color: #EDEDED;
+  margin-bottom: 75px;
+  background-color: rgba(43, 43, 43, 0.25);
+  padding: 25px;
+  border-radius: 5px;
+  width: 80%;
 }
 
 #topSkillsTitle {
@@ -37,7 +74,7 @@ html {
   color: #EDEDED;
   font-weight: bold;
   font-size: 2em;
-  text-align: center;
+  text-align: left;
   margin-bottom: 15px;
 }
 
@@ -46,17 +83,14 @@ html {
   list-style-type: none;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: center;
-  align-items: center;
   height: auto;
-  width: 50%;
+  width: 80%;
   max-width: 600px;
-  margin-left: auto;
   margin-right: auto;
-  background-color: rgba(43, 43, 43, 0.5);
+  background-color: rgba(43, 43, 43, 0.25);
   color: #EDEDED;
   padding: 15px;
-  grid-column: 2;
+  border-radius: 5px;
 }
 
 @media (min-width: 800px) {
@@ -76,8 +110,10 @@ html {
   }
   #aboutMeColumn1 {
     grid-column: 1;
+    grid-row: 2;
   }
   #aboutMeColumn2 {
     grid-column: 1;
+    grid-row: 1;
   }
 }

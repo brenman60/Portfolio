@@ -9,7 +9,7 @@ import "../styles/aboutMe.css";
 const AboutMe = () => {
   document.title = "About Me";
 
-  const topSkills = [67, 45, 22, 73];
+  const topSkills = [67, 45, 22, 73, 64, 26];
   const { getTagNames } = useContext(TagsContext);
 
   return (
@@ -24,11 +24,9 @@ const AboutMe = () => {
       <PageDivider height="4px" width="80%" opacity="0.5" />
       <div id="aboutMeContainer">
         <div id="aboutMeColumn1">
-          <img id="mainPhoto" src="/portfolio/images/Photo.jpg" />
-        </div>
-        <div id="aboutMeColumn2">
+          <h1 id="aboutDescriptionTitle">Brennan Kunicki</h1>
           <p id="aboutDescription">
-
+          Student at Greater Lowell Technical High School, in the Information Technology program. My core interests are web development, software development, and game development. I can adequately develop programs in C#, Python, Visual Basic, and React. I am currently pursuing jobs within my fields of interest.
           </p>
           <h1 id="topSkillsTitle">Top Skills</h1>
           <ul id="topSkills">
@@ -40,6 +38,9 @@ const AboutMe = () => {
               );
             })}
           </ul>
+        </div>
+        <div id="aboutMeColumn2">
+          <img id="mainPhoto" src="/portfolio/images/Photo.jpg" />
         </div>
       </div>
     </motion.div>

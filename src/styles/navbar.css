@@ -64,7 +64,7 @@ html {
 
 @media (min-width: 1400px) {
   .navLink.active {
-    border-bottom-width: 5px;
+    border-bottom-width: 3px;
   }
 }
 @media (max-width: 1400px) {

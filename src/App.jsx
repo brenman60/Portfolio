@@ -9,7 +9,7 @@ import HomePage from "./pages/HomePage";
 import AboutMe from "./pages/AboutMe";
 import Contact from "./pages/Contact";
 import Certifications from "./pages/Certifications";
-import AwardsAndSkills from "./pages/AwardsAndSkills";
+import Awards from "./pages/Awards";
 import WorkSamples from "./pages/WorkSamples";
 import WorkSamplePage from "./pages/WorkSamplePage";
 import NotFound from "./pages/NotFound";
@@ -54,7 +54,7 @@ const router = createBrowserRouter([
       },
       {
         path: "awards",
-        element: <AwardsAndSkills />,
+        element: <Awards />,
       },
       {
         path: "workSamples",

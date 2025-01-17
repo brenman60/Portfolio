@@ -25,7 +25,7 @@ const Navbar = () => {
     { to: "/portfolio/about", label: "About Me" },
     { to: "/portfolio/certifications", label: "Certifications" },
     { to: "/portfolio/resume", label: "Resume" },
-    { to: "/portfolio/awards", label: "Awards & Skills" },
+    { to: "/portfolio/awards", label: "Awards" },
     { to: "/portfolio/workSamples", label: "Work Samples" },
     { to: "/portfolio/contact", label: "Contact" },
   ];

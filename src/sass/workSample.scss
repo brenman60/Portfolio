@@ -43,6 +43,7 @@
     background-color: rgba(colors.$heading, 0.35);
     border-color: rgba(colors.$heading, 0.5);
     transition: opacity 0.15s ease-in;
+    cursor: default;
 
     &:hover {
         opacity: 0.75;
@@ -53,6 +54,7 @@
     background-color: rgba(colors.$heading, 0.35);
     border-color: rgba(colors.$heading, 0.5);
     transition: opacity 0.15s ease-in;
+    cursor: default;
 
     &:hover {
         opacity: 0.75;
@@ -70,12 +72,13 @@
 }
 
 .workTime {
+    display: inline-block;
     margin-top: 45px;
-    width: 100%;
     background-color: rgba(colors.$background2, 0.35);
     padding: 0px 5px 0px 5px;
     border-radius: 2px;
     box-shadow: inset 0 0 0 0px rgba(colors.$text, 0.25);
+    cursor: default;
 
     transition: all 0.15s ease-in;
     &:hover {

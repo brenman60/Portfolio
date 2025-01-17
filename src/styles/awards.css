@@ -1,0 +1,42 @@
+#awardList {
+  display: flex;
+  width: 90%;
+  height: auto;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.award {
+  display: block;
+  width: 80%;
+  height: auto;
+  padding: 25px;
+  background-color: rgba(43, 43, 43, 0.35);
+  color: #EDEDED;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.awardTitle {
+  font-size: 2.75em;
+  font-weight: bold;
+}
+
+.awardSubtitle {
+  font-size: 1.5em;
+  font-weight: 550;
+  margin-bottom: 10px;
+}
+
+.awardDate {
+  display: inline-block;
+  margin-bottom: 35px;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+.awardDescription {
+  font-size: 1em;
+}
