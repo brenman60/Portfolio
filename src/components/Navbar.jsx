@@ -49,8 +49,8 @@ const Navbar = () => {
             style={
               isMobile
                 ? {
-                    top: `${index * 58 + 75}px`,
-                    position: "fixed",
+                    top: `${index * 57 + 75}px`,
+                    position: "static",
                     transition: `
                     left ${((index + 1) / 4) * 0.35}s ease-in, 
                     opacity ${((index + 1) / 4) * 0.35}s ease-in,

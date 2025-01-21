@@ -18,7 +18,7 @@
   text-align: center;
   justify-content: center;
   margin: auto;
-  font-size: clamp(1.5em, 3vw, 3vw);
+  font-size: 3em;
   padding: 10px 25px 10px 25px;
   font-weight: bold;
   word-break: keep-all;
@@ -37,11 +37,10 @@
   justify-content: center;
   margin: auto;
   margin-top: 10px;
-  font-size: clamp(0.25em, 2vw, 2vw);
-  padding: 5px 15px 5px 15px;
+  font-size: 2em;
+  padding: 5px 10px 5px 10px;
   font-weight: bold;
-  width: 55%;
-  word-break: keep-all;
+  width: 80%;
   max-height: 300px;
   overflow: hidden;
 }

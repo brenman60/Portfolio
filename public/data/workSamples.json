@@ -37,19 +37,19 @@
         "pictures": [
             {
                 "link": "/portfolio/images/projects/DataCleaningVisualization/1.jpg",
-                "caption": ""
+                "caption": "Example Caption"
             },
             {
                 "link": "/portfolio/images/projects/DataCleaningVisualization/2.jpg",
-                "caption": ""
+                "caption": "Example Caption Example Caption"
             },
             {
                 "link": "/portfolio/images/projects/DataCleaningVisualization/3.jpg",
-                "caption": ""
+                "caption": "Example Caption Example Caption Example Caption"
             },
             {
                 "link": "/portfolio/images/projects/DataCleaningVisualization/4.jpg",
-                "caption": ""
+                "caption": "Example Caption Example Caption Example Caption Example Caption"
             }
         ]
     },

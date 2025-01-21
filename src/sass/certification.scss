@@ -13,7 +13,7 @@
     transform: translateY(-15px);
     z-index: 2;
     box-shadow: inset 0 0 0 0px rgba(colors.$text, 0.25);
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out, background-color 0.15s ease-in, box-shadow 0.15s ease-in;
+    transition: opacity 0.35s ease-in-out, transform 0.25s ease-in-out, background-color 0.15s ease-in, box-shadow 0.15s ease-in;
 
     &:hover {
         box-shadow: inset 0 0 0 1px rgba(colors.$text, 0.75);

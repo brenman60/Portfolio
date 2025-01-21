@@ -1,6 +1,6 @@
 @use "./colors.scss";
 
-$mobileWidth: 1400px;
+$mobileWidth: 1250px;
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -9,6 +9,7 @@ $mobileWidth: 1400px;
 
 #root {
     margin-bottom: 150px;
+    font-size: 75%;
 }
 
 html {

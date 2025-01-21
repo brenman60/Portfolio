@@ -5,6 +5,7 @@
 
 #root {
   margin-bottom: 150px;
+  font-size: 75%;
 }
 
 html {
@@ -20,7 +21,7 @@ html {
   justify-content: right;
   list-style-type: none;
   z-index: 100;
-  gap: clamp(10px, 1.5vw, 1.5vw);
+  gap: clamp(10px, 0.5vw, 1.5vw);
   white-space: nowrap;
 }
 
@@ -32,7 +33,7 @@ html {
   margin: 0px;
   text-align: center;
   height: 100%;
-  font-size: 1.15em;
+  font-size: 1.5em;
   border-bottom: #339de4;
   border-style: solid;
   border-bottom-width: 0px;
@@ -62,12 +63,12 @@ html {
   display: none;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1250px) {
   .navLink.active {
     border-bottom-width: 3px;
   }
 }
-@media (max-width: 1400px) {
+@media (max-width: 1250px) {
   #nav {
     background-color: transparent;
     display: inline;

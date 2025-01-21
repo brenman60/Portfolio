@@ -68,7 +68,7 @@ const CertificationsList = ({
     setTimeout(() => {
       setButtonDisabled(false);
       button.classList.remove("disabled");
-    }, 2 * 1000)
+    }, 250)
   };
 
   return (

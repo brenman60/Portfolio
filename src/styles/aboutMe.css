@@ -5,6 +5,7 @@
 
 #root {
   margin-bottom: 150px;
+  font-size: 75%;
 }
 
 html {
@@ -24,7 +25,7 @@ html {
 
 #mainPhoto {
   height: auto;
-  width: 80%;
+  width: 50%;
   border-radius: 5px;
   border-width: 2px;
   border-color: rgba(237, 237, 237, 0.5);

@@ -12,7 +12,7 @@ $navHeight: $navHeightRaw + px;
   justify-content: right;
   list-style-type: none;
   z-index: 100;
-  gap: clamp(10px, 1.5vw, 1.5vw);
+  gap: clamp(10px, 0.5vw, 1.5vw);
   white-space: nowrap;
 }
 
@@ -24,7 +24,7 @@ $navHeight: $navHeightRaw + px;
   margin: 0px;
   text-align: center;
   height: 100%;
-  font-size: clamp(0.75em, 1.15em, 1.15em);
+  font-size: clamp(0.75em, 1.5em, 1.5em);
   border-bottom: colors.$heading;
   border-style: solid;
   border-bottom-width: 0px;

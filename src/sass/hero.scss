@@ -1,8 +1,8 @@
 @use "colors.scss";
 
 $heroHeight: 250px;
-$titleText: 3vw;
-$subtitleText: 2vw;
+$titleText: 3em;
+$subtitleText: 2em;
 
 #hero {
     position: relative;
@@ -24,10 +24,9 @@ $subtitleText: 2vw;
     text-align: center;
     justify-content: center;
     margin: auto;
-    font-size: clamp(1.5em, $titleText, $titleText);
+    font-size: clamp(1.15em, $titleText, $titleText);
     padding: 10px 25px 10px 25px;
     font-weight: bold;
-    //width: clamp(250px, 70%, 15000px);
     word-break: keep-all;
     max-height: 300px;
     overflow: hidden;
@@ -46,10 +45,9 @@ $subtitleText: 2vw;
     margin: auto;
     margin-top: 10px;
     font-size: clamp(0.25em, $subtitleText, $subtitleText);
-    padding: 5px 15px 5px 15px;
+    padding: 5px 10px 5px 10px;
     font-weight: bold;
-    width: clamp(45%, 55%, 70%);
-    word-break: keep-all;
+    width: 80%;
     max-height: 300px;
     overflow: hidden;
 
