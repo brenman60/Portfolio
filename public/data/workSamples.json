@@ -107,8 +107,7 @@
         "gallery": [
             "/portfolio/images/projects/PythonModDownloader/1.jpg",
             "/portfolio/images/projects/PythonModDownloader/2.jpg",
-            "/portfolio/images/projects/PythonModDownloader/3.jpg",
-            "/portfolio/images/projects/PythonModDownloader/4.jpg"
+            "/portfolio/images/projects/PythonModDownloader/3.jpg"
         ],
         "links": [
             {
@@ -126,19 +125,15 @@
         "pictures": [
             {
                 "link": "/portfolio/images/projects/PythonModDownloader/1.jpg",
-                "caption": ""
+                "caption": "The Visual Studio Code environment used for developing the program."
             },
             {
                 "link": "/portfolio/images/projects/PythonModDownloader/2.jpg",
-                "caption": ""
+                "caption": "Various checks making use of files and directories at the start of the program."
             },
             {
                 "link": "/portfolio/images/projects/PythonModDownloader/3.jpg",
-                "caption": ""
-            },
-            {
-                "link": "/portfolio/images/projects/PythonModDownloader/4.jpg",
-                "caption": ""
+                "caption": "The terminal window opened by the program, displaying how the user makes interactions."
             }
         ]
     },
@@ -173,19 +168,19 @@
         "pictures": [
             {
                 "link": "/portfolio/images/projects/BinaryClock/1.jpg",
-                "caption": ""
+                "caption": "The GUI of the program."
             },
             {
                 "link": "/portfolio/images/projects/BinaryClock/2.jpg",
-                "caption": ""
+                "caption": "The beginning of the program, displaying the logic for 'ticking' the clock."
             },
             {
                 "link": "/portfolio/images/projects/BinaryClock/3.jpg",
-                "caption": ""
+                "caption": "The update method used for each position of the time, utilizing simple math to calculate which boxes to activate."
             },
             {
                 "link": "/portfolio/images/projects/BinaryClock/4.jpg",
-                "caption": ""
+                "caption": "The Visual Studio environment used to develop the program. Displayed is the Visual Basic design window, for developing the GUI."
             }
         ]
     },
@@ -215,19 +210,19 @@
         "pictures": [
             {
                 "link": "/portfolio/images/projects/CSharpModDownloader/1.jpg",
-                "caption": ""
+                "caption": "The terminal window displaying how the user interacts with the program."
             },
             {
                 "link": "/portfolio/images/projects/CSharpModDownloader/2.jpg",
-                "caption": ""
+                "caption": "Method used to auto-update the program with a new version hosted on a download link."
             },
             {
                 "link": "/portfolio/images/projects/CSharpModDownloader/3.jpg",
-                "caption": ""
+                "caption": "Another display of user interaction with the terminal window, displaying a snippet of the process of using the program."
             },
             {
                 "link": "/portfolio/images/projects/CSharpModDownloader/4.jpg",
-                "caption": ""
+                "caption": "The Visual Studio environment used to develop the program."
             }
         ]
     },
@@ -296,19 +291,19 @@
         "pictures": [
             {
                 "link": "/portfolio/images/projects/ModpackManager/1.jpg",
-                "caption": ""
+                "caption": "The Visual Studio environment used to develop the program, displaying the WPF interface."
             },
             {
                 "link": "/portfolio/images/projects/ModpackManager/2.jpg",
-                "caption": ""
+                "caption": "Methods relating to the tab switching functionality of the program."
             },
             {
                 "link": "/portfolio/images/projects/ModpackManager/3.jpg",
-                "caption": ""
+                "caption": "Data structures showing the way files are handled within the program."
             },
             {
                 "link": "/portfolio/images/projects/ModpackManager/4.jpg",
-                "caption": ""
+                "caption": "The main GUI of the program."
             }
         ]
     },
@@ -350,27 +345,27 @@
         "pictures": [
             {
                 "link": "/portfolio/images/projects/Forlorn/1.jpg",
-                "caption": ""
+                "caption": "Gameplay screenshot displaying the player running through the city during a snowstorm event."
             },
             {
                 "link": "/portfolio/images/projects/Forlorn/2.jpg",
-                "caption": ""
+                "caption": "Gameplay screenshot displaying the player running through the city during a police event."
             },
             {
                 "link": "/portfolio/images/projects/Forlorn/3.jpg",
-                "caption": ""
+                "caption": "Gameplay screenshot of the game's unlockable skill tree."
             },
             {
                 "link": "/portfolio/images/projects/Forlorn/4.jpg",
-                "caption": ""
+                "caption": "The project plan used to organize the work between me and my partner. Shows tasks, dates, and completion status."
             },
             {
                 "link": "/portfolio/images/projects/Forlorn/5.jpg",
-                "caption": ""
+                "caption": "The Visual Studio environment used for the programming of the game."
             },
             {
                 "link": "/portfolio/images/projects/Forlorn/6.jpg",
-                "caption": ""
+                "caption": "The Unity environment used for the bulk of the game's development."
             }
         ]
     },
