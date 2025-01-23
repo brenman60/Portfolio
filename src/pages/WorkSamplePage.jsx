@@ -2,16 +2,18 @@ import "../styles/workSamplePage.css";
 import { motion } from "framer-motion";
 import Hero from "../components/Hero";
 import { TagsContext } from "../components/TagsProvider";
-import { useContext, useState, useEffect } from "react";
+import { useContext, useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import Tag from "../components/Tag";
 import PageDivider from "../components/PageDivider";
 import Link from "../components/Link";
+import ImageViewer from "../components/ImageViewer";
 
 const WorkSamplePage = () => {
   const { id } = useParams();
   const [workSample, setWorkSample] = useState(null);
   const { getTagNames } = useContext(TagsContext);
+  const imageViewerRef = useRef();
 
   useEffect(() => {
     fetch("../data/workSamples.json")
@@ -19,6 +21,10 @@ const WorkSamplePage = () => {
     .then(jsonData => setWorkSample(jsonData[id]))
     .catch(error => console.error("Error loading JSON: ", error));
   }, [id]);
+
+  const openImageViewer = (image) => {
+    imageViewerRef.current.open(workSample.pictures, image);
+  };
 
   if (!workSample) {
     return <motion.div></motion.div>
@@ -71,7 +77,7 @@ const WorkSamplePage = () => {
                 <div key={index} className="workPictureContainer">
                   <div className="workPicture">
                     <img src={picture.link} alt={picture.caption} className="workPicturePic" />
-                    <img src="/portfolio/images/icons/zoom.png" className="workPictureZoom" />
+                    <img src="/portfolio/images/icons/zoom.png" className="workPictureZoom" onClick={() => openImageViewer(picture)} />
                   </div>
                   <p className="workPictureCaption">{picture.caption}</p>
                 </div>
@@ -79,6 +85,8 @@ const WorkSamplePage = () => {
             </ul>
         </div>
       </div>
+
+      <ImageViewer ref={imageViewerRef} title={workSample.name} />
     </motion.div>
   )
 };

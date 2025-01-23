@@ -33,5 +33,26 @@
         "date": "January 2025",
         "description": "Competed in the In-House SkillsUSA test at Greater Lowell Technical High School, scoring 1st place above every other IT student in Computer Programming.",
         "visibility": "visible"
+    },
+    "gltech_special_recognition": {
+        "title": "Special Recognition",
+        "placement": "Within Information Technology",
+        "date": "June 2024",
+        "description": "Was chosen for the Special Recognition award for my performance in Information Technology during my Sophomore year.",
+        "visibility": "visible"
+    },
+    "gltech_honor_rolls": {
+        "title": "Honor Rolls",
+        "placement": "",
+        "date": "2022 - 2026",
+        "description": "Earned Honor Roll recognition throughout high school: \n Freshmen Year - Terms 2, 4 \n Sophomore Year - Terms 2, ",
+        "visibility": "visible"
+    },
+    "gltech_high_honor_rolls": {
+        "title": "High Honor Rolls",
+        "placement": "",
+        "date": "2022 - 2026",
+        "description": "Earned High Honor Roll recognition throughout high school: \n Freshmen Year - Terms 1, 3 \n Sophomore Year - Terms 3, 4",
+        "visibility": "visible"
     }
 }

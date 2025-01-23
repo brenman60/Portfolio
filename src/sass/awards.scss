@@ -13,12 +13,13 @@
 .award {
     position: relative;
     width: 500px;
-    height: 100%;
+    height: auto;
     padding: 25px;
     background-color: rgba(colors.$background2, 0.35);
     color: colors.$text;
     border-radius: 10px;
     margin: 20px;
+    display: flex;
     flex-direction: column;
 }
 
@@ -34,6 +35,9 @@
     position: relative;
     display: inline-block;
     padding: 0 5px;
+    width: fit-content;
+    color: colors.$highlight;
+    pointer-events: none;
 
     &::after {
         content: "";
@@ -44,25 +48,24 @@
         left: 0;
         top: 0;
         padding: 5px;
-        animation: placementGlow 5s infinite linear;
+        animation: placementGlow 5s infinite;
         z-index: -1;
         border-radius: 5px;
+        background: linear-gradient(90deg, transparent, rgba(colors.$highlight, 0.25), transparent);
+        background-size: 200% 100%;
+        filter: blur(5px);
 
         @keyframes placementGlow {
             0% {
-                background-image: conic-gradient(from 180deg, colors.$text 0%, transparent 60%);
+                background-position: 0% 0%;
             }
-            25% {
-                background-image: conic-gradient(from 90deg, colors.$text 0%, transparent 60%);
-            }
+        
             50% {
-                background-image: conic-gradient(from 0deg, colors.$text 0%, transparent 60%);
+                background-position: 100% 0%;
             }
-            75% {
-                background-image: conic-gradient(from 270deg, colors.$text 0%, transparent 60%);
-            }
+        
             100% {
-                background-image: conic-gradient(from 180deg, colors.$text 0%, transparent 60%);
+                background-position: 0% 0%;
             }
         }
     }

@@ -62,6 +62,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 3px;
   padding: 3px;
+  cursor: pointer;
   transition: all 0.3s ease-out;
 }
 .workPicture .workPictureZoom:hover {
@@ -86,6 +87,19 @@
   text-align: left;
 }
 
+#workSampleTags {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+  gap: 10px;
+  width: 75%;
+  margin: auto;
+  background-color: rgba(43, 43, 43, 0.5);
+  color: #EDEDED;
+  padding: 15px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+
 #workSampleLinks {
   display: flex;
   list-style-type: none;
@@ -106,79 +120,4 @@
   aspect-ratio: 1/1;
   width: 125px;
   height: 185px;
-}
-
-#workSampleTags {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
-  gap: 10px;
-  width: 75%;
-  margin: auto;
-  background-color: rgba(43, 43, 43, 0.5);
-  color: #EDEDED;
-  padding: 15px;
-  border-radius: 15px;
-  margin-bottom: 50px;
-}
-
-.workPicturesContainer {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  position: relative;
-}
-
-.workPictures {
-  position: relative;
-}
-
-.workPicturesLeft {
-  position: absolute;
-  top: 50%;
-  left: 8vw;
-  font-size: clamp(0.25em, 5vw, 3em);
-  z-index: 1;
-  transform: translateY(-50%);
-  background-color: rgba(27, 27, 27, 0.5);
-  color: #EDEDED;
-  border-radius: 5px;
-  transition: all 0.15s ease-in;
-  cursor: pointer;
-}
-.workPicturesLeft:hover {
-  transform: translateY(-50%) translateX(-15%);
-}
-
-.workImageContainer {
-  width: 90%;
-  height: 500px;
-  overflow: hidden;
-  margin: auto;
-}
-
-.workPicturesImage {
-  border-radius: 10px;
-  border-width: 2px;
-  border-color: rgba(27, 27, 27, 0.5);
-  width: 100%;
-  height: auto;
-  min-height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.workPicturesRight {
-  position: absolute;
-  top: 50%;
-  right: 8vw;
-  font-size: clamp(0.25em, 5vw, 3em);
-  z-index: 1;
-  transform: translateY(-50%);
-  background-color: rgba(27, 27, 27, 0.5);
-  color: #EDEDED;
-  border-radius: 5px;
-  transition: all 0.15s ease-in;
-  cursor: pointer;
-}
-.workPicturesRight:hover {
-  transform: translateY(-50%) translateX(15%);
 }

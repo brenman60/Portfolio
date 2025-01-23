@@ -33,7 +33,7 @@ const Awards = () => {
       <PageDivider height="4px" width="80%" opacity="0.5" />
       <ul id="awardList">
         {Object.entries(data).map(([key, value]) => (
-          <li key={key} className="award" style={{ display: value.visibility == "visible" ? "flex" : "none" }}>
+          <li key={key} className="award" style={{ display: value.visibility == "visible" ? "" : "none" }}>
             <Award award={value} />
           </li>
         ))}
