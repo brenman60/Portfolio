@@ -80,23 +80,23 @@
         "pictures": [
             {
                 "link": "/portfolio/images/projects/DiscordBot/1.jpg",
-                "caption": ""
+                "caption": "The bot's help command."
             },
             {
                 "link": "/portfolio/images/projects/DiscordBot/2.jpg",
-                "caption": ""
+                "caption": "The bot's stats and server command."
             },
             {
                 "link": "/portfolio/images/projects/DiscordBot/3.jpg",
-                "caption": ""
+                "caption": "The bot's leveling system."
             },
             {
                 "link": "/portfolio/images/projects/DiscordBot/4.jpg",
-                "caption": ""
+                "caption": "The bot's website commands, displaying my LinkedIn, GitHub, and Portfolio."
             },
             {
                 "link": "/portfolio/images/projects/DiscordBot/5.jpg",
-                "caption": ""
+                "caption": "The Visual Studio Code environment used for developing the bot."
             }
         ]
     },
