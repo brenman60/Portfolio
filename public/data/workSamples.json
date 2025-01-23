@@ -37,19 +37,19 @@
         "pictures": [
             {
                 "link": "/portfolio/images/projects/DataCleaningVisualization/1.jpg",
-                "caption": "Example Caption"
+                "caption": "Graph displaying the output of the prediction model. Shows the actual values (expected) versus the model's prediction."
             },
             {
                 "link": "/portfolio/images/projects/DataCleaningVisualization/2.jpg",
-                "caption": "Example Caption Example Caption"
+                "caption": "Graph displaying the data's relationship to gender and race towards the total charges."
             },
             {
                 "link": "/portfolio/images/projects/DataCleaningVisualization/3.jpg",
-                "caption": "Example Caption Example Caption Example Caption"
+                "caption": "Jupyter Notebook containing the creation of the prediction model."
             },
             {
                 "link": "/portfolio/images/projects/DataCleaningVisualization/4.jpg",
-                "caption": "Example Caption Example Caption Example Caption Example Caption"
+                "caption": "Title slide of the final presentation."
             }
         ]
     },

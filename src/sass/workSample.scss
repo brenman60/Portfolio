@@ -101,6 +101,9 @@
     transform: translateY(-50%);
     background-color: rgba(colors.$background3, 0.5);
     border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
     transition: all 0.15s ease-in;
     cursor: pointer;
 
@@ -142,6 +145,9 @@
     transform: translateY(-50%);
     background-color: rgba(colors.$background3, 0.5);
     border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+
     transition: all 0.15s ease-in;
     cursor: pointer;
 

@@ -16,8 +16,8 @@ const PageDivider = ({
         backgroundColor: `${colorScheme.background2}`,
         opacity: `${opacity}`,
         margin: "auto",
-        marginTop: `${topMargin}px`,
-        marginBottom: `${bottomMargin}px`,
+        marginTop: topMargin != 0 ? `${topMargin}px` : "auto",
+        marginBottom: bottomMargin != 0 ? `${bottomMargin}px` : "auto",
         borderRadius: "25px",
       }}
     />

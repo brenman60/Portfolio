@@ -13,6 +13,7 @@ const WorkSamplePage = () => {
   const { id } = useParams();
   const [workSample, setWorkSample] = useState(null);
   const { getTagNames } = useContext(TagsContext);
+  const [picture, setPicture] = useState(0);
   const imageViewerRef = useRef();
 
   useEffect(() => {
@@ -24,6 +25,16 @@ const WorkSamplePage = () => {
 
   const openImageViewer = (image) => {
     imageViewerRef.current.open(workSample.pictures, image);
+  };
+
+  const changeImage = (direction) => {
+    if (picture + direction <= -1) {
+      setPicture(workSample.pictures.length - 1);
+    } else if (picture + direction >= workSample.pictures.length) {
+      setPicture(0);
+    } else {
+      setPicture(picture + direction);
+    }
   };
 
   if (!workSample) {
@@ -72,17 +83,15 @@ const WorkSamplePage = () => {
         </div>
 
         <div id="workSampleColumn2">
-            <ul id="workPicturesList">
-              {workSample.pictures.map((picture, index) => (
-                <div key={index} className="workPictureContainer">
-                  <div className="workPicture">
-                    <img src={picture.link} alt={picture.caption} className="workPicturePic" />
-                    <img src="/portfolio/images/icons/zoom.png" className="workPictureZoom" onClick={() => openImageViewer(picture)} />
-                  </div>
-                  <p className="workPictureCaption">{picture.caption}</p>
-                </div>
-              ))}
-            </ul>
+          <div id="workPictureContainer">
+            <div id="workPicture">
+              <button id="workPictureLeft" onClick={() => changeImage(-1)}>{"<"}</button>
+              <img src={workSample.pictures[picture].link} alt={workSample.pictures[picture].caption} id="workPicturePic" />
+              <img src="/portfolio/images/icons/zoom.png" id="workPictureZoom" onClick={() => openImageViewer(workSample.pictures[picture])} />
+              <button id="workPictureRight" onClick={() => changeImage(1)}>{">"}</button>
+            </div>
+            <p id="workPictureCaption">{workSample.pictures[picture].caption}</p>
+          </div>
         </div>
       </div>
 
