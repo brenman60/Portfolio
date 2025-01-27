@@ -44,10 +44,10 @@ $subtitleText: 2em;
     justify-content: center;
     margin: auto;
     margin-top: 10px;
-    font-size: clamp(0.25em, $subtitleText, $subtitleText);
+    font-size: clamp(0.25rem, $subtitleText, $subtitleText);
     padding: 5px 10px 5px 10px;
     font-weight: bold;
-    width: 80%;
+    width: fit-content;
     max-height: 300px;
     overflow: hidden;
 

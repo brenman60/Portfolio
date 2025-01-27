@@ -26,7 +26,13 @@ export const TagsProvider = ({ children }) => {
     }).filter(name => name !== null);
   };
 
-  const value = { tags, setTags, getTagNames };
+  const getTags = () => {
+    if (!tags) return [];
+
+    return tags;
+  }
+
+  const value = { tags, setTags, getTagNames, getTags };
   return <TagsContext.Provider value={value}>{children}</TagsContext.Provider>;
 }
 

@@ -2,7 +2,7 @@ import Hero from "../components/Hero";
 import PageDivider from "../components/PageDivider";
 import { motion } from "framer-motion";
 import { TagsContext } from "../components/TagsProvider";
-import { useContext } from "react";
+import { useContext, useState, useRef } from "react";
 import Tag from "../components/Tag";
 import "../styles/aboutMe.css";
 
@@ -10,7 +10,9 @@ const AboutMe = () => {
   document.title = "About Me";
 
   const topSkills = [67, 45, 22, 73, 64, 26];
-  const { getTagNames } = useContext(TagsContext);
+  const { getTagNames, getTags } = useContext(TagsContext);
+  const [tagsExpanded, setTagsExpanded] = useState(false);
+  const tagsRef = useRef(null);
 
   return (
     <motion.div
@@ -43,6 +45,33 @@ const AboutMe = () => {
           <img id="mainPhoto" src="/portfolio/images/Photo.jpg" />
         </div>
       </div>
+      <PageDivider height="4px" width="80%" opacity="0.5" topMargin={50} bottomMargin={50} />
+      <div id="aboutMeTags" ref={tagsRef} className={tagsExpanded ? "open" : "closed"} style={{ height: tagsExpanded ? `${tagsRef.current?.scrollHeight}px` : "500px" }}>
+        {Object.entries(getTags()).map(([key, value]) => {
+          return(
+            <div key={key} className="aboutMeTag" style={{ display: value.shownInSkills }}>
+              <h1 className="aboutMeTagName">{value.name}</h1>
+              <div className="aboutMeTagLevel">
+                <h1>Proficiency: {value.level + "%"}</h1>
+                <div>
+                  <div style={{ width: `${value.level}%` }}></div>
+                </div>
+              </div>
+              <div className="aboutMeTagLength">
+                <h1 className="aboutMeTagYears">{
+                  value.years >= 1 ? value.years : Math.round(value.years * 12)
+                }</h1>
+                <h1 className="aboutMeTagYearsCaption">{
+                  value.years > 1 ? "Years of Experience" :
+                  value.years == 1 ? "Year of Experience": "Months of Experience"
+                }</h1>
+              </div>
+            </div>
+          )
+        })}
+      </div>
+
+      <button id="aboutMeTagsExpand" className={tagsExpanded ? "closed" : "open"} onClick={() => setTagsExpanded(true)}>Show More</button>
     </motion.div>
   );
 };

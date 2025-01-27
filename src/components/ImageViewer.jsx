@@ -36,7 +36,6 @@ const ImageViewer = forwardRef(({
 
   return (
     <div id="imageViewer" className={isOpen ? "open" : "closed"}>
-      <button id="imageViewerExit" onClick={() => setIsOpen(false)}>X</button>
       <h1 id="imageViewerTitle">{title}</h1>
       <div id="imageViewerImageContainer">
         <button id="imageViewerLeft" onClick={() => changeImage(-1)}>{"<"}</button>
@@ -44,6 +43,7 @@ const ImageViewer = forwardRef(({
         <button id="imageViewerRight" onClick={() => changeImage(1)}>{">"}</button>
       </div>
       <p id="imageViewerCaption">{images[image].caption}</p>
+      <button id="imageViewerExit" onClick={() => setIsOpen(false)}>Close</button>
     </div>
   );
 });

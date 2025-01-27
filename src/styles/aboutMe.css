@@ -25,7 +25,7 @@ html {
 
 #mainPhoto {
   height: auto;
-  width: 50%;
+  width: 75%;
   border-radius: 5px;
   border-width: 2px;
   border-color: rgba(237, 237, 237, 0.5);
@@ -92,6 +92,139 @@ html {
   color: #EDEDED;
   padding: 15px;
   border-radius: 5px;
+}
+
+#aboutMeTags {
+  color: #EDEDED;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 150px;
+  overflow: hidden;
+  transition: height 2s ease;
+}
+#aboutMeTags.closed {
+  -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+  mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.aboutMeTag {
+  width: 40%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 15px;
+  background-color: rgba(43, 43, 43, 0.25);
+  border-radius: 5px;
+}
+.aboutMeTag .aboutMeTagName {
+  font-size: clamp(0.25rem, 5vw, 2em);
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  overflow: hidden;
+}
+.aboutMeTag .aboutMeTagLevel {
+  width: 95%;
+  margin: auto;
+  margin-bottom: 15px;
+}
+.aboutMeTag .aboutMeTagLevel > h1 {
+  font-size: 1.25em;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.aboutMeTag .aboutMeTagLevel > div {
+  width: 100%;
+  height: 10px;
+  margin: auto;
+  background-color: rgba(17, 17, 17, 0.25);
+}
+.aboutMeTag .aboutMeTagLevel > div > div {
+  background-color: rgba(71, 224, 148, 0.5);
+  height: 100%;
+  box-shadow: 0px 0px 5px 1px rgba(71, 224, 148, 0.5);
+  filter: brightness(125%);
+}
+.aboutMeTag .aboutMeTagLength {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: clamp(0.25rem, 4vw, 1.5em);
+}
+.aboutMeTag .aboutMeTagLength .aboutMeTagYears {
+  display: inline;
+  position: relative;
+  margin-right: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: clamp(0.25rem, 5vw, 1.75em);
+}
+.aboutMeTag .aboutMeTagLength .aboutMeTagYears::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 75%;
+  left: 0;
+  top: 12.5%;
+  padding: 5px;
+  animation: placementGlow 2.5s infinite;
+  z-index: -1;
+  border-radius: 5px;
+  background: linear-gradient(90deg, transparent, rgba(71, 224, 148, 0.5), transparent);
+  background-size: 200% 100%;
+  filter: blur(10px);
+}
+@keyframes placementGlow {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+.aboutMeTag .aboutMeTagLength .aboutMeTagYearsCaption {
+  display: inline;
+}
+
+#aboutMeTagsExpand {
+  display: flex;
+  position: relative;
+  margin-top: -250px;
+  z-index: 1;
+  color: #EDEDED;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(43, 43, 43, 0.75);
+  border-color: rgba(17, 17, 17, 0.5);
+  border-radius: 5px;
+  border-width: 1px;
+  transition: all 0.3s ease-out, opacity 0.1s ease-out;
+}
+#aboutMeTagsExpand.open {
+  opacity: 1;
+  pointer-events: all;
+}
+#aboutMeTagsExpand.closed {
+  opacity: 0;
+  pointer-events: none;
+}
+#aboutMeTagsExpand:hover {
+  border-color: rgba(17, 17, 17, 0.75);
+  border-radius: 15px;
+  width: 275px;
 }
 
 @media (min-width: 800px) {

@@ -4,7 +4,6 @@
 
 #workSampleContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto 1fr;
   width: 95%;
   margin: auto;
@@ -13,13 +12,11 @@
 }
 
 #workSampleColumn1 {
-  grid-column: 1;
   display: flex;
   flex-direction: column;
 }
 
 #workSampleColumn2 {
-  grid-column: 2;
   display: flex;
   flex-direction: column;
 }
@@ -177,4 +174,29 @@
   aspect-ratio: 1/1;
   width: 125px;
   height: 185px;
+}
+
+@media (min-width: 800px) {
+  #workSampleContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #workSampleColumn1 {
+    grid-column: 1;
+  }
+  #workSampleColumn2 {
+    grid-column: 2;
+  }
+}
+@media (max-width: 800px) {
+  #workSampleContainer {
+    grid-template-columns: 1fr;
+  }
+  #workSampleColumn1 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  #workSampleColumn2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
 }
