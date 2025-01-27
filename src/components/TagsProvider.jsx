@@ -17,6 +17,22 @@ export const TagsProvider = ({ children }) => {
 //   const filterSkillsByCategory = (category) =>
 //     category ? skills.filter(skill => skill.category === category) : skills;
 
+  const sortByLevel = (givenTags) => {
+    if (!tags || !givenTags) return [];
+
+    const tagArray = Object.values(givenTags);
+    return tagArray.sort((a, b) => parseInt(b.level) - parseInt(a.level));
+  };
+
+  const sortByStarred = (givenTags) => {
+    if (!tags || !givenTags) return [];
+
+    const tagArray = Object.values(givenTags);
+    return tagArray.sort((a, b) => {
+      return b.starred === 'true' ? 1 : a.starred === 'true' ? -1 : 0;
+    });
+  };
+
   const getTagNames = (tagIds) => {
     if (!tags || !Array.isArray(tagIds)) return [];
 
@@ -32,7 +48,7 @@ export const TagsProvider = ({ children }) => {
     return tags;
   }
 
-  const value = { tags, setTags, getTagNames, getTags };
+  const value = { tags, setTags, getTagNames, getTags, sortByLevel, sortByStarred };
   return <TagsContext.Provider value={value}>{children}</TagsContext.Provider>;
 }
 

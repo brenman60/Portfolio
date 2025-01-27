@@ -10,7 +10,7 @@ const AboutMe = () => {
   document.title = "About Me";
 
   const topSkills = [67, 45, 22, 73, 64, 26];
-  const { getTagNames, getTags } = useContext(TagsContext);
+  const { getTagNames, getTags, sortByLevel, sortByStarred } = useContext(TagsContext);
   const [tagsExpanded, setTagsExpanded] = useState(false);
   const tagsRef = useRef(null);
 
@@ -47,9 +47,9 @@ const AboutMe = () => {
       </div>
       <PageDivider height="4px" width="80%" opacity="0.5" topMargin={50} bottomMargin={50} />
       <div id="aboutMeTags" ref={tagsRef} className={tagsExpanded ? "open" : "closed"} style={{ height: tagsExpanded ? `${tagsRef.current?.scrollHeight}px` : "500px" }}>
-        {Object.entries(getTags()).map(([key, value]) => {
+        {Object.entries(sortByStarred(sortByLevel(getTags()))).map(([key, value]) => {
           return(
-            <div key={key} className="aboutMeTag" style={{ display: value.shownInSkills }}>
+            <div key={key} className={`aboutMeTag ${value.starred === "true" ? "starred" : ""}`} style={{ display: value.shownInSkills }}>
               <h1 className="aboutMeTagName">{value.name}</h1>
               <div className="aboutMeTagLevel">
                 <h1>Proficiency: {value.level + "%"}</h1>
