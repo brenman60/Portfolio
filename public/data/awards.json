@@ -17,21 +17,21 @@
         "title": "SkillsUSA Information Technology Services",
         "placement": "2nd Schoolwide",
         "date": "January 2025",
-        "description": "Competed in the In-House SkillsUSA test at Greater Lowell Technical High School, scoring 1st place above every other IT student in Computer Programming.",
+        "description": "Competed in the In-House SkillsUSA test at Greater Lowell Technical High School, scoring 2nd place among every other IT student in Information Technology Services.",
         "visibility": "visible"
     },
     "skillsusa_inhouse_cybersecurity": {
         "title": "SkillsUSA Cybersecurity",
         "placement": "3rd Schoolwide",
         "date": "January 2025",
-        "description": "Competed in the In-House SkillsUSA test at Greater Lowell Technical High School, scoring 1st place above every other IT student in Computer Programming.",
+        "description": "Competed in the In-House SkillsUSA test at Greater Lowell Technical High School, scoring 3rd place among every other IT student in Cybersecurity.",
         "visibility": "visible"
     },
     "skillsusa_inhouse_internetworking": {
         "title": "SkillsUSA Internetworking",
         "placement": "3rd Schoolwide",
         "date": "January 2025",
-        "description": "Competed in the In-House SkillsUSA test at Greater Lowell Technical High School, scoring 1st place above every other IT student in Computer Programming.",
+        "description": "Competed in the In-House SkillsUSA test at Greater Lowell Technical High School, scoring 3rd place among every other IT student in Internetworking.",
         "visibility": "visible"
     },
     "gltech_special_recognition": {
@@ -45,14 +45,14 @@
         "title": "Honor Rolls",
         "placement": "",
         "date": "2022 - 2026",
-        "description": "Earned Honor Roll recognition throughout high school: \n Freshmen Year - Terms 2, 4 \n Sophomore Year - Terms 2, ",
+        "description": "Earned Honor Roll recognition throughout high school: - Freshmen Year: Terms 2 & 4 - Sophomore Year: Term 2",
         "visibility": "visible"
     },
     "gltech_high_honor_rolls": {
         "title": "High Honor Rolls",
         "placement": "",
         "date": "2022 - 2026",
-        "description": "Earned High Honor Roll recognition throughout high school: \n Freshmen Year - Terms 1, 3 \n Sophomore Year - Terms 3, 4",
+        "description": "Earned High Honor Roll recognition throughout high school: - Freshmen Year: Terms 1 & 3 - Sophomore Year: Terms 3 & 4",
         "visibility": "visible"
     }
 }

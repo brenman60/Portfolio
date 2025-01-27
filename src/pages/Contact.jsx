@@ -31,7 +31,7 @@ const Contact = () => {
           </li>
         ))}
       </ul>
-      <a id="contactEmail" href="mailto:106611@gltech.org">Email Me: 106611@gltech.org</a>
+      <a id="contactEmail" href="mailto:brennankunicki@gmail.com">Email Me: brennankunicki@gmail.com</a>
     </motion.div>
   );
 };

@@ -71,5 +71,7 @@
     "70": { "name": "Unity", "level": "90", "years": "4", "starred": "false", "shownInSkills": "" },
     "71": { "name": "Game Development", "level": "90", "years": "4", "starred": "true", "shownInSkills": "" },
     "72": { "name": "Game Design", "level": "0", "years": "0", "starred": "false", "shownInSkills": "none" },
-    "73": { "name": "React", "level": "75", "years": "0.5", "starred": "true", "shownInSkills": "" }
+    "73": { "name": "React", "level": "75", "years": "0.5", "starred": "true", "shownInSkills": "" },
+    "74": { "name": "Teamwork", "level": "0", "years": "0", "starred": "false", "shownInSkills": "none" },
+    "75": { "name": "Communication", "level": "0", "years": "0", "starred": "false", "shownInSkills": "none" }
 }

@@ -115,7 +115,7 @@
     transition: all 0.3s ease-out;
     &.starred {
         //animation: backgroundGlow 5s infinite;
-        background: linear-gradient(0deg, transparent, rgba(colors.$lightGold, 0.25), rgba(colors.$background2, 0.25));
+        background: linear-gradient(0deg, transparent, rgba(colors.$lightGold, 0.15), rgba(colors.$background2, 0.25));
         background-size: 100% 200%;
         background-position: 0% 100%;
     }
@@ -142,7 +142,6 @@
         width: 95%;
         margin: auto;
         margin-bottom: 15px;
-        display: none;
 
         > h1 {
             // Level Container Title
